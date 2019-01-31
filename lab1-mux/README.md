@@ -1,13 +1,15 @@
 # Mux
 [Inspiration for this lab](https://www.xilinx.com/support/documentation/university/Vivado-Teaching/HDL-Design/2015x/Verilog/docs-pdf/lab1.pdf)
 
-Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry-logic, xor gates, d flip flops. Understanding these is the goal of this course. We have covered XOR gates and LUTs. The goal now is to cover muxes. jj
+Vivado turns all circuits into the primitives of a CLB Slice: LUTs, muxes, carry-logic, xor gates, d flip flops. Understanding these is the goal of this course. We have covered XOR gates and LUTs. The goal now is to cover muxes. 
 
 ## 1_1_m2x1Mux-1bitwide
 
 #### Port Diagram
 
 #### ![mux2-1-1bitwide](mux2-1-1bitwide.svg)
+
+
 
 #### Verilog Code
 
@@ -31,23 +33,23 @@ SW[0] is x, SW[1] is y, SW[2] is the select line and LED[0] is the output m. SW[
 
 #### **Questions**/Tasks
 
-*In the rtl schematic screen shot, the two **and gates** are connected to select and not select. Describe what they are doing in terms of what a mux does.*
+*In the rtl schematic screen shot, the two **and gates** are connected to select and not select. Describe what they are doing in terms of what a mux does.* **one "AND gates" use for switch on, one "AND" gates use for switch off, simplified the transistor level by AND gates** 
 
-*In the rtl schematic screen shot, what does the **or gate** do in terms of what a mux does?*
+*In the rtl schematic screen shot, what does the **or gate** do in terms of what a mux does?* **"OR gate" is the main station to decide which select to let the LED on or off, simplified the transistor level by OR gates**
 
-*How does the schematic change after running synthesis?*
+*How does the schematic change after running synthesis?* **appeared the LUX after running synthesis**
 
-*After running synthesis and implementation, clicking on synthesis under RTL, synthesis and Implementation continues to display the LUT based diagram. Not the gate based diagram. Why? Form a reasonable, non-trivial, relevant hypothesis.* 
+*After running synthesis and implementation, clicking on synthesis under RTL, synthesis and Implementation continues to display the LUT based diagram. Not the gate based diagram. Why? Form a reasonable, non-trivial, relevant hypothesis.* **relevant hypothesis** 
 
- *The black and white design window appears first after running which step of the workflow?*
+ *The black and white design window appears first after running which step of the workflow?* **black and white design window appears first after running Implementation**
 
-*How what can you click on to see a region of the device window change from some color to white?*
+*How what can you click on to see a region of the device window change from some color to white?* **click on the color, it automatic change to white**
 
-*White arrows in the screen shot above are helping us see what?* 
+*White arrows in the screen shot above are helping us see what?* **to help us to see input, select line and output**
 
 *How does Data flow in the fpga from left to right, right to left, bottom up, top down?*
 
-*What is the verilog symbol for the white line going up at an angle in the device diagram?*
+*What is the verilog symbol for the white line going up at an angle in the device diagram?* **I dont understand**
 
 
 
@@ -77,7 +79,7 @@ One select line now selects between two pair of inputs and displays one of the p
 
 *Explain how to zoom in on the above Device Screen Shot.*
 
-*Do you see pictures of muxes in the Device Screen Shot? Are they used?*
+*Do you see pictures of muxes in the Device Screen Shot? Are they used?* **Yes**
 
 *Which stage of the work flow choose the specific LUT above?*
 
@@ -153,9 +155,9 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 #### Questions/Tasks
 
-*tb stands for what?*
+*tb stands for what?* **test bench**
 
-*What verilog code is the top level module, the test or the circuit?*
+*What verilog code is the top level module, the test or the circuit?* **the circuit**
 
 *The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?*
 
