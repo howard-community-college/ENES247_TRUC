@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Feb  7 10:15:46 2019
-| Host         : GAUBIN running 64-bit major release  (build 9200)
+| Date         : Thu Feb  7 14:43:59 2019
+| Host         : SET253-21C running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file m2x1Mux_control_sets_placed.rpt
 | Design       : m2x1Mux
 | Device       : xc7a100t

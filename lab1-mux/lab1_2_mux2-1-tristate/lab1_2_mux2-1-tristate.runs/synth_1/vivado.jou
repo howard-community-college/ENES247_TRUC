@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Feb  7 10:14:22 2019
-# Process ID: 13248
-# Current directory: C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.runs/synth_1
+# Start of session at: Thu Feb  7 14:40:45 2019
+# Process ID: 3796
+# Current directory: C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.runs/synth_1
 # Command line: vivado.exe -log m2x1Mux.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source m2x1Mux.tcl
-# Log file: C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.runs/synth_1/m2x1Mux.vds
-# Journal file: C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.runs/synth_1\vivado.jou
+# Log file: C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.runs/synth_1/m2x1Mux.vds
+# Journal file: C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source m2x1Mux.tcl -notrace

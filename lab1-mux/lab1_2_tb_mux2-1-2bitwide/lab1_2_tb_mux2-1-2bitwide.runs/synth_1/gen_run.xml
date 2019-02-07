@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549557050">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549568664">
   <File Type="PA-TCL" Name="mux_2bit_2_to_1_dataflow.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="mux_2bit_2_to_1_dataflow_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mux_2bit_2_to_1_dataflow_reports.tcl"/>
@@ -11,20 +11,8 @@
   <File Type="VDS-TIMING-PB" Name="mux_2bit_2_to_1_dataflow_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/lab1_2_tb_mux2-1-2bitwide/mux_2bit_2_to_1_dataflow.v">
+    <File Path="$PPRDIR/mux_2bit_2_to_1_dataflow.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/mux_2bit_2_to_1_dataflow.v"/>
-        <Attr Name="ImportTime" Val="1548632292"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/lab1_2_tb_mux2-1-2bitwide/mux_2bit_2_to_1_dataflow_tb.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/mux_2bit_2_to_1_dataflow_tb.v"/>
-        <Attr Name="ImportTime" Val="1548632292"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -33,14 +21,13 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="mux_2bit_2_to_1_dataflow"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/lab1_2_tb_mux2-1-2bitwide/Nexys4DDR_Master.xdc">
+    <File Path="$PPRDIR/Nexys4DDR_Master.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/Nexys4DDR_Master.xdc"/>
-        <Attr Name="ImportTime" Val="1548632292"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

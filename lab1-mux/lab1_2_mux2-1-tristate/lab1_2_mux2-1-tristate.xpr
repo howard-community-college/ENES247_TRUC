@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="40e6a6d6de9a4e44aa91ad7037b0ab38"/>

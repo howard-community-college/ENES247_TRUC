@@ -67,7 +67,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param xicom.use_bs_reader 1
   open_checkpoint mux_2bit_2_to_1_dataflow_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_tb_mux2-1-2bitwide/lab1_2_tb_mux2-1-2bitwide.cache/wt} [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_tb_mux2-1-2bitwide/lab1_2_tb_mux2-1-2bitwide.cache/wt [current_project]
   catch { write_mem_info -force mux_2bit_2_to_1_dataflow.mmi }
   write_bitstream -force mux_2bit_2_to_1_dataflow.bit 
   catch {write_debug_probes -quiet -force mux_2bit_2_to_1_dataflow}

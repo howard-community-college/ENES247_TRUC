@@ -147,9 +147,15 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 #### RTL Schematic Screen shot
 
+
+
 #### Synthesis Schematic Screen shot
 
+![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\SSS_4.PNG)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\ID_4.PNG)
 
 #### Testing
 
@@ -268,9 +274,15 @@ Now answer these questions:
 
 #### RTL Schematic Screen shot
 
+[![1549567488005](C:\Users\SET253-21U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1549567488005.png)]()
+
 #### Synthesis Schematic Screen shot
 
+[![1549567958194](C:\Users\SET253-21U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1549567958194.png)]()
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+[![1549567910220](C:\Users\SET253-21U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1549567910220.png)]()
 
 #### Testing
 
@@ -318,9 +330,15 @@ The simple mux circuits explored in this lab were created with various forms of 
 
 #### Verilog Code
 
+![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\VerilogCode_6.PNG)
+
 #### RTL Schematic Screen shot
 
+![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\RTL_6.PNG)
+
 #### Synthesis Schematic Screen shot
+
+![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\SSS_6.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
@@ -359,7 +377,11 @@ One of the ways we know what is going on is to predict Vivado's behavior. This c
 
 #### RTL Schematic Screen shot
 
+![1549568969707](C:\Users\SET253-21U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1549568969707.png)
+
 #### Synthesis Schematic Screen shot
+
+![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\SSS_7.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
@@ -367,7 +389,7 @@ One of the ways we know what is going on is to predict Vivado's behavior. This c
 
 #### Questions/Tasks
 
-*Which of the two modules above is the top level module?*
+*Which of the two modules above is the top level module?* ****
 
 *What is the symbol for top level module in the vivado design sources hierarchy?*
 
