@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES247/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.runs/synth_1'
+HD_PWD='C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_mux2-1-tristate/lab1_2_mux2-1-tristate.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
