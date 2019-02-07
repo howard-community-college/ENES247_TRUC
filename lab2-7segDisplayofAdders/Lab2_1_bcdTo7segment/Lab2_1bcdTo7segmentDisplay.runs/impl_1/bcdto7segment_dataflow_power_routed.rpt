@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Feb  3 15:14:44 2019
-| Host             : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date             : Thu Feb  7 16:31:57 2019
+| Host             : SET253-21C running 64-bit major release  (build 9200)
 | Command          : report_power -file bcdto7segment_dataflow_power_routed.rpt -pb bcdto7segment_dataflow_power_summary_routed.pb -rpx bcdto7segment_dataflow_power_routed.rpx
 | Design           : bcdto7segment_dataflow
 | Device           : xc7a100tcsg324-1
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 6.324        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 6.188        |
+| Dynamic (W)              | 6.189        |
 | Device Static (W)        | 0.135        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 56.1         |
@@ -52,11 +52,10 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.020 |        9 |       --- |             --- |
-|   LUT as Logic |     0.020 |        4 |     63400 |           <0.01 |
-|   Others       |     0.000 |        2 |       --- |             --- |
+| Slice Logic    |     0.021 |        7 |       --- |             --- |
+|   LUT as Logic |     0.021 |        4 |     63400 |           <0.01 |
 | Signals        |     0.068 |       11 |       --- |             --- |
-| I/O            |     6.101 |       19 |       210 |            9.05 |
+| I/O            |     6.101 |       11 |       210 |            5.24 |
 | Static Power   |     0.135 |          |           |                 |
 | Total          |     6.324 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -68,7 +67,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.150 |       0.104 |      0.046 |
+| Vccint    |       1.000 |     0.151 |       0.105 |      0.046 |
 | Vccaux    |       1.800 |     0.245 |       0.223 |      0.022 |
 | Vcco33    |       3.300 |     1.726 |       1.722 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -135,7 +134,7 @@ Table of Contents
 +------------------------+-----------+
 | Name                   | Power (W) |
 +------------------------+-----------+
-| bcdto7segment_dataflow |     6.188 |
+| bcdto7segment_dataflow |     6.189 |
 +------------------------+-----------+
 
 

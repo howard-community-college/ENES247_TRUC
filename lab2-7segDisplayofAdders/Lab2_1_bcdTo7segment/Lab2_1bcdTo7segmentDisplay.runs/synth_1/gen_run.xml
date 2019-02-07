@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549224806">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1549574958">
   <File Type="PA-TCL" Name="bcdto7segment_dataflow.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="bcdto7segment_dataflow_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="bcdto7segment_dataflow_reports.tcl"/>
   <File Type="RDS-RDS" Name="bcdto7segment_dataflow.vds"/>
   <File Type="RDS-UTIL" Name="bcdto7segment_dataflow_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="bcdto7segment_dataflow_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="bcdto7segment_dataflow.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="bcdto7segment_dataflow_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="bcdto7segment_dataflow_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Lab2_0Constants/bcdto7segment_dataflow_Nexys4ddr.v">

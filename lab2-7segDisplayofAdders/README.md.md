@@ -18,9 +18,15 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 #### Synthesis Schematic
 
+![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab2-7segDisplayofAdders\SS0.PNG)
+
 #### Implementation Design Screen shot of something interesting
 
+
+
 #### Testing
+
+*normally on switch to normally off*
 
 #### Prompts
 
@@ -30,9 +36,9 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 *Can the decimal place (DP) be moved to a different display than the display the number is appearing on?*
 
-*Can all the displays display the same number once?*
+*Can all the displays display the same number once?* **Yes**
 
-*Can the displays capture and store different numbers?*
+*Can the displays capture and store different numbers?* **No**
 
 *How are the segments, the DP and the anodes behaving differently than the LED's?* 
 
