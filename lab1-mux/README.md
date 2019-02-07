@@ -113,9 +113,9 @@ Two muxes are implemented using the same inputs with the same select line.  So i
 
 #### Questions/Tasks
 
-*In the RTL schematic, what is RTL_Mux g1_i doing?*
+*In the RTL schematic, what is RTL_Mux g1_i doing?* **control**
 
-*Which of the two verilog implemented muxes actually created a tristate symbol in the RTL schematic?*
+*Which of the two verilog implemented muxes actually created a tristate symbol in the RTL schematic?* **g1_i and h_i**
 
 *After Synthesis, which of the two verilog implemented muxes looks more simple?*
 
@@ -159,9 +159,9 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 *What verilog code is the top level module, the test or the circuit?* **the circuit**
 
-*The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?*
+*The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?* **It has the  top level and lower level**
 
-*What name would you give to this verilog abstraction level?*
+*What name would you give to this verilog abstraction level?* **top level**
 
 *In the simulation, what is the cause of the red box with an X in it above?* 
 
@@ -427,10 +427,10 @@ These ethics questions are related to the community of engineers working for ind
 
 *Having learned about a chaos, visualize the advantages one has when confronted with one of these opportunities:  .. getting a doctorate, working for Xilinx or using Xilinx tools in a competitive engineering company.* 
 
-*Given that Fortran hasn't changed since the 1960's, C hasn't changed since the 1970's. Java and C++ haven't changed for [decades](https://www.tiobe.com/tiobe-index/), do these languages excite you as an engineer or depress you?*
+*Given that Fortran hasn't changed since the 1960's, C hasn't changed since the 1970's. Java and C++ haven't changed for [decades](https://www.tiobe.com/tiobe-index/), do these languages excite you as an engineer or depress you? **Yes**
 
-Almost all software today has verilog code generators including matlab, python, Lab View. A lot of this code will pass Simulation on [EDAplayground](https://www.edaplayground.com/) or will only work with specific hardware.  *What are the chances that generated code will work in Vivado?* 
+Almost all software today has verilog code generators including matlab, python, Lab View. A lot of this code will pass Simulation on [EDAplayground](https://www.edaplayground.com/) or will only work with specific hardware.  *What are the chances that generated code will work in Vivado?*  ****
 
-*How universal is the digital design process, how universal are the design documents and the symbols they contain that are entered into and looked at in matlab, python and LabView?*
+*How universal is the digital design process, how universal are the design documents and the symbols they contain that are entered into and looked at in matlab, python and LabView?* **They looked at **
 
-*What is the market share of [Xilinx](https://www.fool.com/investing/2018/04/17/xilinxs-project-everest-looks-like-bad-news-for-in.aspx)?* 
+*What is the market share of [Xilinx](https://www.fool.com/investing/2018/04/17/xilinxs-project-everest-looks-like-bad-news-for-in.aspx)?* **FPGA market**
