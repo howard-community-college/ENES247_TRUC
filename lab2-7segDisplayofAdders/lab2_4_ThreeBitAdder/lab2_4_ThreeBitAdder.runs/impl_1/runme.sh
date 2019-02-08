@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.runs/impl_1'
+HD_PWD='C:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

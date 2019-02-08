@@ -18,7 +18,7 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 #### Synthesis Schematic
 
-![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab2-7segDisplayofAdders\SS0.PNG)
+![]()
 
 #### Implementation Design Screen shot of something interesting
 
@@ -26,31 +26,35 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 #### Testing
 
-*normally on switch to normally off*
+***Using the switch from left to right to move the LED segment to the LED above the switch (normally on switch to normally off)***
+
+***Using the switch from right to left (J15-R13) to display the specific number on the 7 segment***
+
+
 
 #### Prompts
 
-*How is this project different from just hooking all the switches up to all the LEDs?*
+*How is this project different from just hooking all the switches up to all the LEDs?**This can use the switch to all the LEDs and the 7 segment display too**
 
-*This project does something different from an output point of view than just selecting an LED. What output does something different?*
+*This project does something different from an output point of view than just selecting an LED. What output does something different?**nothing**
 
-*Can the decimal place (DP) be moved to a different display than the display the number is appearing on?*
+*Can the decimal place (DP) be moved to a different display than the display the number is appearing on?* **Yes**
 
 *Can all the displays display the same number once?* **Yes**
 
-*Can the displays capture and store different numbers?* **No**
+*Can the displays capture and store different numbers?* **Yes**
 
 *How are the segments, the DP and the anodes behaving differently than the LED's?* 
 
-*How would you modify segment, DP and/or anodes to make them behave like an LED?*
+*How would you modify segment, DP and/or anodes to make them behave like an LED?* **Using the switch to change**
 
-*Would this be more confusing or less confusing when looking at the verilog code?*
+*Would this be more confusing or less confusing when looking at the verilog code?* **less confusing**
 
-*What words are used by computer and electrical engineers to describe this behavior?*
+*What words are used by computer and electrical engineers to describe this behavior?* **design**
 
-*How many additional lines would have to be added to the XDC file (mostly commented out) to address each of eight displays, and each segment and decimal place on each display individually like the 16 LED's?* 
+*How many additional lines would have to be added to the XDC file (mostly commented out) to address each of eight displays, and each segment and decimal place on each display individually like the 16 LED's?*  **16 lines**
 
-*Are these the same number of additional wires that would be needed coming out of the FPGA?*
+*Are these the same number of additional wires that would be needed coming out of the FPGA?* **No**
 
 ## lab2_1_bcdTo7Segment
 
@@ -222,15 +226,27 @@ The goal is to display BCD with an LED representing 1, the switches representing
 
 #### Synthesis Schematic
 
+![1549651666870](1549651666870.png)
+
+![1549651720843](1549651720843.png)
+
 #### Implementation Design Screen shot of something interesting
+
+
+
+
 
 #### Testing
 
+***4 switch control 7segmentDisplay until the number going to 10, it included 1 carry out and go back to 7segmentDisplay again***
+
 #### Prompts
 
-*Why the modules HexToBCD and BCDto7SegDisplay?*
+*Why the modules HexToBCD and BCDto7SegDisplay?* **Can't go directly from hexto7SegDisplay**
 
-*Why not make it just one big, simple verilog project?*
+*Why not make it just one big, simple verilog project?* **Hexto7SegDisplay is more complicated than combine HextoBCD and BCDto7SegDisplay**
+
+
 
 ## Lab2_4_Adders
 
@@ -255,7 +271,9 @@ Vivado is going to translate any math into truth tables.  A 6 input LUT can hold
 
 Build 3 bit adder. Two groups of 3 switches, added together fit in four bits and can be displayed on one 7 segment display with an overflow or carry LED. 
 
-#### Port Interface
+#### Port Interface 
+
+![1549651542672](1549651542672.png)
 
 #### RTL Schematic
 
@@ -263,9 +281,21 @@ Build 3 bit adder. Two groups of 3 switches, added together fit in four bits and
 
 #### Synthesis Schematic
 
+
+
 #### Implementation Design Screen shot of something interesting
 
+![](C:\Users\SET253-22U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab2-7segDisplayofAdders\ID5.PNG)
+
+![ID51](C:\Users\SET253-22U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab2-7segDisplayofAdders\ID51.PNG)
+
+![ID53](C:\Users\SET253-22U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab2-7segDisplayofAdders\ID53.PNG)
+
+
+
 #### Testing
+
+
 
 #### Prompts
 
@@ -283,11 +313,13 @@ Build 3 bit adder. Two groups of 3 switches, added together fit in four bits and
 
 *What does Vivado change this circuit into LUTs?*
 
-*Can you think of a more efficient way to use the LUTs than what Vivado did?*
+*Can you think of a more efficient way to use the LUTs than what Vivado did?* **No**
 
 *How many rows would a 28 input truth table have?*
-
-*How many LUTs are used in this project and how many are available in our FPGA (Look at Synthesis Utilization Report)?*
+$$
+2^{28} rows
+$$
+*How many LUTs are used in this project and how many are available in our FPGA (Look at Synthesis Utilization Report)?* 
 
 *What is the largest adder truth table that could be built with all of them (# of inputs, outputs, and rows) ?*
 

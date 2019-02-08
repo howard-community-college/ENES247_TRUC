@@ -17,25 +17,22 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/FoersterGame/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4664-DESKTOP-KB2R4MG/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.cache/wt [current_project]
-set_property parent.project_path C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.cache/wt [current_project]
+set_property parent.project_path C:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.cache/ip [current_project]
+set_property ip_output_repo c:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/sources_1/imports/lab2_4_ThreeBitAdder/BCDto7SegmentDisplay.v
-  C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/sources_1/imports/lab2_4_ThreeBitAdder/hexToBCD.v
-  C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/sources_1/imports/lab2_4_ThreeBitAdder/hexTo7seg.v
+  C:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/sources_1/imports/lab2_4_ThreeBitAdder/BCDto7SegmentDisplay.v
+  C:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/sources_1/imports/lab2_4_ThreeBitAdder/hexToBCD.v
+  C:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/sources_1/imports/lab2_4_ThreeBitAdder/hexTo7seg.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -45,8 +42,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/constrs_1/imports/lab2_4_ThreeBitAdder/Nexys4DDR_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/FoersterGame/Documents/GitHub/ENES247/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/constrs_1/imports/lab2_4_ThreeBitAdder/Nexys4DDR_Master.xdc]
+read_xdc C:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/constrs_1/imports/lab2_4_ThreeBitAdder/Nexys4DDR_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.srcs/constrs_1/imports/lab2_4_ThreeBitAdder/Nexys4DDR_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
