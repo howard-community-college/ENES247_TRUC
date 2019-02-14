@@ -10,15 +10,29 @@ The  HexToBCD algorithm in the last lab worked for one hex group. The problem is
 
 #### Port Diagram
 
+![1550175807301](1550175807301.png)
+
 #### Verilog Code
+
+![1550173432781](1550173432781.png)
 
 #### RTL Schematic Screen shot
 
+![1550173713863](1550173713863.png)
+
 #### Synthesis Schematic Screen shot
+
+![1550174061571](1550174061571.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1550174554170](1550174554170.png)
+
 #### Testing
+
+The 2Decoder has been turning 3 inputs to 16 outputs. When 1 input enter, 2 LED output light up. because it has 2 circuit at one time.
+
+
 
 ___
 
@@ -27,6 +41,8 @@ ___
 This code tests the ability to count clock pulses and display 32 bits split into two groups of 16. SW[0] switches between the two groups. 
 
 #### Port Diagram
+
+![1550178538008](1550178538008.png)
 
 #### Verilog Code
 
@@ -51,6 +67,12 @@ Carry Logic Being used
 ![1550065640417](1550065640417.png)
 
 #### Testing
+
+SW[0] the LED fill up slowly.
+
+SW[1] the LED fill up instantly. (The power is not enough so that why the LED from the left lighter than the LED from the right side)
+
+reset to start over
 
 ___
 
