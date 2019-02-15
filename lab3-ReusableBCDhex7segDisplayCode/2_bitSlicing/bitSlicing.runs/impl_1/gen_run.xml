@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550249924">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550253504">
   <File Type="BITSTR-BMM" Name="bitSlice_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="bitSlice_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="bitSlice_timing_summary_init.rpt"/>

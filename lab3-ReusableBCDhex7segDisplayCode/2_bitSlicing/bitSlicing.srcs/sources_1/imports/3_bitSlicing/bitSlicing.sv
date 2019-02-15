@@ -10,8 +10,8 @@ module bitSlice(
         reg [3:0] idx;
         wire [7:0] out = in[8*idx +: 8];
     
-    integer c_input = 451263789; // instead of reg [127:0] in; creating a 32 bit value
-    //goal is to display a group of 4 bits: 0001 1010 1110 0101 1011 1101 0010 1101
+    integer c_input = 897561423; // instead of reg [127:0] in; creating a 32 bit value
+    //goal is to display a group of 4 bits: 0011 0101 0111 1111 1011 0011 0100 1111
     // using 3 bit wide select instead of 4 bit wide reg [3:0] idx;
     // using 4 bit wide hexOut instead of eight bit wire [7:0] out = in[8*idx +: 8];
     assign hexOut = c_input[4*select +: 4];
