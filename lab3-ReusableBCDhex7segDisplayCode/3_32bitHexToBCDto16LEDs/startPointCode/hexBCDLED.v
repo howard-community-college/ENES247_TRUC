@@ -1,12 +1,16 @@
 module BCD(
 	input [7:0] binary,
-	//input [3:0] select,
+	input [3:0] select,
 	output reg [3:0] Hundreds,
 	output reg [3:0] Tens,
 	output reg [3:0] Ones
 	);
 	
+	reg [27:0] in;
+	reg [3:0] index;
+	integer  c_input = 897561423;
 	integer i;
+	
 	always @(binary) 
 	begin
 		//set 100's 10's and 1's to 0

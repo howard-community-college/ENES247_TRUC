@@ -4,10 +4,10 @@ Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
 SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
 IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
 
-Process ID (PID): 8628
+Process ID (PID): 1052
 License: Customer
 
-Current time: 	Fri Feb 15 13:46:34 EST 2019
+Current time: 	Fri Feb 15 16:13:54 EST 2019
 Time zone: 	Eastern Standard Time (America/New_York)
 
 OS: Windows 10
@@ -46,7 +46,7 @@ Vivado layouts directory: C:/Users/SET253-14U.HCCMAIN/AppData/Roaming/Xilinx/Viv
 PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
 Vivado log file location: 	C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/vivado.log
 Vivado journal file location: 	C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/vivado.jou
-Engine tmp dir: 	C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/.Xil/Vivado-8628-SET253-14C
+Engine tmp dir: 	C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/.Xil/Vivado-1052-SET253-14C
 
 Xilinx Environment Variables
 ----------------------------
@@ -58,9 +58,9 @@ XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
 XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
 
 
-GUI allocated memory:	155 MB
+GUI allocated memory:	154 MB
 GUI max memory:		3,072 MB
-Engine allocated memory: 607 MB
+Engine allocated memory: 602 MB
 
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
@@ -76,7 +76,7 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg' 
 // TclEventType: MSGMGR_MOVEMSG
 // TclEventType: FILE_SET_NEW
-// TclEventType: RUN_FAILED
+// TclEventType: RUN_COMPLETED
 // TclEventType: RUN_CURRENT
 // TclEventType: PROJECT_DASHBOARD_NEW
 // TclEventType: PROJECT_DASHBOARD_GADGET_NEW
@@ -93,26 +93,25 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
 // TclEventType: PROJECT_NEW
 // Tcl Message: open_project C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg/thirtyTwoBitsHexTo7segAnd16LEDs.xpr 
-// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg' INFO: [Project 1-313] Project file moved from 'C:/Users/FoersterGame/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/4_32bitsHexTo7segAnd16LEDs' since last save. 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg' INFO: [Project 1-313] Project file moved from 'C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg' since last save. 
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
 // Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
 // TclEventType: PROJECT_NEW
-// [GUI Memory]: 74 MB (+75171kb) [00:00:09]
-// [Engine Memory]: 638 MB (+517822kb) [00:00:09]
-// [GUI Memory]: 87 MB (+9722kb) [00:00:09]
-// WARNING: HEventQueue.dispatchEvent() is taking  2742 ms.
-// HMemoryUtils.trashcanNow. Engine heap size: 695 MB. GUI used memory: 56 MB. Current time: 2/15/19, 1:46:37 PM EST
-// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 725.469 ; gain = 134.172 
+// [GUI Memory]: 87 MB (+89209kb) [00:00:11]
+// [Engine Memory]: 642 MB (+521746kb) [00:00:11]
+// [GUI Memory]: 103 MB (+11638kb) [00:00:12]
+// WARNING: HEventQueue.dispatchEvent() is taking  3758 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 732 MB. GUI used memory: 49 MB. Current time: 2/15/19, 4:13:59 PM EST
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 734.938 ; gain = 146.031 
+// [Engine Memory]: 732 MB (+60803kb) [00:00:15]
 // Project name: thirtyTwoBitsHexTo7segAnd16LEDs; location: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab3-ReusableBCDhex7segDisplayCode/5_32bitsHexTo7seg; part: xc7a100tcsg324-1
-// [GUI Memory]: 111 MB (+20682kb) [00:00:12]
-// [Engine Memory]: 706 MB (+37812kb) [00:00:12]
 dismissDialog("Open Project"); // bx (cp)
 // Tcl Message: update_compile_order -fileset sources_1 
-// PAPropertyPanels.initPanels (32bitHexTo16LEDs.sv) elapsed time: 0.2s
-// Elapsed time: 370 seconds
+// Elapsed time: 49 seconds
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, thirtyTwobitHexTo16LEDs (32bitHexTo16LEDs.sv)]", 1, false); // B (D, cp)
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, thirtyTwobitHexTo16LEDs (32bitHexTo16LEDs.sv)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
-// [GUI Memory]: 121 MB (+4248kb) [00:18:01]
-// HMemoryUtils.trashcanNow. Engine heap size: 709 MB. GUI used memory: 53 MB. Current time: 2/15/19, 2:16:41 PM EST
-// HMemoryUtils.trashcanNow. Engine heap size: 709 MB. GUI used memory: 48 MB. Current time: 2/15/19, 2:46:41 PM EST
+// [GUI Memory]: 110 MB (+1651kb) [00:01:34]
+// [GUI Memory]: 115 MB (+306kb) [00:11:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 732 MB. GUI used memory: 53 MB. Current time: 2/15/19, 4:44:02 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 732 MB. GUI used memory: 48 MB. Current time: 2/15/19, 5:14:02 PM EST
