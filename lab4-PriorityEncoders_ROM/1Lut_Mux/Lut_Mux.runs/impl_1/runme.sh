@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES246/-5MuxOfMux/Lut_Mux/Lut_Mux.runs/impl_1'
+HD_PWD='C:/Users/SET253-15U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab4-PriorityEncoders_ROM/1Lut_Mux/Lut_Mux.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

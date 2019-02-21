@@ -6,37 +6,51 @@ One goal might be to use the primitives within the FPGA CLB. Chapter 3 of the Vi
 
 #### Verilog Code
 
+![img](1550781671893.png)
+
 #### RTL Schematic Screen shot
+
+![img](1550781220836.png)
 
 #### Synthesis Schematic Screen shot
 
+![1550783056806](1550783056806.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![img](1550782681071.png)
+
+![1550782807940](1550782807940.png)
+
+![1550782379733](1550782379733.png)
+
+
 
 #### Testing
 
- 
+ Convert the HEX F003355FF(in verilog code) to BIN 1111 0000 0000 0011 0011 0101 0101 1111 1111. Start to count the BIN number 0 from left to right. The output of the LUT depend on the BIN number. 
 
 ___
 
 #### Prompts
 
-*Does it look like the primitives can be accessed in Verilog?* 
+*Does it look like the primitives can be accessed in Verilog?*  **Yes**
 
-*Can you see a direct relationship between the primitive used and the primitive referenced in the Verilog code?*
+*Can you see a direct relationship between the primitive used and the primitive referenced in the Verilog code?*  **Yes**
 
 *The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?*
 
 *How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?*
 
-*What Line of the Code puts a truth table in the LUT?*
+*What Line of the Code puts a truth table in the LUT?* ****
 
-*How many rows are there to the truth table?*
+*How many rows are there to the truth table?* **64 rows **
 
 *How is the LUT instantiation different from the normal instantiation of calling a pre-existing module?*
 
 *Look through chapters 3 and 4 of the Vivado 7 Series Libraries.  Focus on the Design Entry Method box.  Then answer these questions.*
 
-*What does instantiation mean?*
+*What does instantiation mean?* ** **
 
 *What does inference mean?*
 
