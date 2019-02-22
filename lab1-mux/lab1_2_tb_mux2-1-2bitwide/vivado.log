@@ -75,3 +75,8 @@ Run output will be captured here: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/E
 launch_runs impl_1 -jobs 2
 [Fri Feb 22 15:19:11 2019] Launched impl_1...
 Run output will be captured here: C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_2_tb_mux2-1-2bitwide/lab1_2_tb_mux2-1-2bitwide.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'reset_runs' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 22 15:19:47 2019...
