@@ -67,9 +67,8 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param synth.incrementalSynthesisCache C:/Users/FoersterGame/Documents/GitHub/ENES247/lab3-PriorityEncoders_ROM/3PriorityEncoder/Gate/.Xil/Vivado-6840-DESKTOP-KB2R4MG/incrSyn
   open_checkpoint priority_encoder_dataflow_routed.dcp
-  set_property webtalk.parent_dir C:/Users/FoersterGame/Documents/GitHub/ENES247/lab3-PriorityEncoders_ROM/3PriorityEncoder/RTL_One_Hot/3PriorityEncoder.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab4-PriorityEncoders_ROM/3PriorityEncoder/RTL_One_Hot/3PriorityEncoder.cache/wt [current_project]
   catch { write_mem_info -force priority_encoder_dataflow.mmi }
   write_bitstream -force priority_encoder_dataflow.bit 
   catch {write_debug_probes -quiet -force priority_encoder_dataflow}

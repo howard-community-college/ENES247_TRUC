@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/FoersterGame/Documents/GitHub/ENES247/lab3-PriorityEncoders_ROM/3PriorityEncoder/RTL_One_Hot/3PriorityEncoder.runs/impl_1'
+HD_PWD='C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab4-PriorityEncoders_ROM/3PriorityEncoder/RTL_One_Hot/3PriorityEncoder.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -6,7 +6,7 @@
 module decoder_3to8(
     input [2:0] x,
     output [7:0] y,
-	output [7:0] z
+    output [7:0] z
     );
         
 	//dataflow decoder
@@ -20,6 +20,6 @@ module decoder_3to8(
 	assign y[7] = x[2] & x[1] & x[0];
 	
 	//RTL decoder
-	assign y = 1 << x;
+    assign z = 1 << x;
 
 endmodule

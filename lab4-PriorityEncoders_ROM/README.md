@@ -4,6 +4,8 @@ One goal might be to use the primitives within the FPGA CLB. Chapter 3 of the Vi
 
 #### Port Diagram
 
+![1550854360372](1550854360372.png)
+
 #### Verilog Code
 
 ![img](1550781671893.png)
@@ -40,39 +42,41 @@ ___
 
 *The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?*
 
-*How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?*
+*How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?* **set the  input in the verilog code**
 
-*What Line of the Code puts a truth table in the LUT?* ****
+*What Line of the Code puts a truth table in the LUT?* 
+
+**LUT6 #(.INIT (64'h0000000F003355FF)) selection_lut ( .I0 	(data_in[0]),.I1 	(data_in[1]), .I2     (data_in[2]), .I3     (sel[0]), .I4     (sel[1]), .I5     (sel[2]), .O      (lut_data_out)); **
 
 *How many rows are there to the truth table?* **64 rows **
 
-*How is the LUT instantiation different from the normal instantiation of calling a pre-existing module?*
+*How is the LUT instantiation different from the normal instantiation of calling a pre-existing module?* **answer above**
 
 *Look through chapters 3 and 4 of the Vivado 7 Series Libraries.  Focus on the Design Entry Method box.  Then answer these questions.*
 
-*What does instantiation mean?* ** **
+*What does instantiation mean?* **set the input**
 
 *What does inference mean?*
 
-*Have we inferred buffers (BUFG) in projects before?*
+*Have we inferred buffers (BUFG) in projects before?* **yes**
 
-*What does instantiation mean?*
+*What does instantiation mean?* **double question**
 
-*What does inference mean?*
+*What does inference mean?* **asked above**
 
-*Verilog has tristate [buffer primitives](http://verilog.renerta.com/mobile/source/vrg00003.htm)  named bufif0 and bufif1. These names don't appear in the Vivado 7 series libraries. Why? What are the risks of using the buffers Xilinx has named in this document?*
+*Verilog has tristate [buffer primitives](http://verilog.renerta.com/mobile/source/vrg00003.htm)  named bufif0 and bufif1. These names don't appear in the Vivado 7 series libraries. Why? What are the risks of using the buffers Xilinx has named in this document?* **The names dont appear  because the gate has the delay. The risk of using the buffers Xilinx is wasting time for the delay and not identical **
 
 *Look up LUT6 in the Vivado 7 series library document. We instantiated it in this project. Is Instantiation possible according to the document?* 
 
-*What is the preferred design entry method?* 
+*What is the preferred design entry method?* **using the logic table**
 
-*Is MUXCY in the Vivado 7 series library document like LUT6?* 
+*Is MUXCY in the Vivado 7 series library document like LUT6?*  **No**
 
-*We instantiated MUXCY in this project's verilog code. And it looks like it was successfully implemented. We can test it. Read this [article](https://forums.xilinx.com/t5/Welcome-Join/where-are-the-muxcy-and-xorcy/td-p/311931) from from Jan 2013 about MUXCY and XORCY. Do you think it is wise to use this piece of a CLB in a circuit design project?*
+*We instantiated MUXCY in this project's verilog code. And it looks like it was successfully implemented. We can test it. Read this [article](https://forums.xilinx.com/t5/Welcome-Join/where-are-the-muxcy-and-xorcy/td-p/311931) from from Jan 2013 about MUXCY and XORCY. Do you think it is wise to use this piece of a CLB in a circuit design project?* **Yes**
 
-*What would you guess is the preferred entry method for a MUXCY .. if it existed in the Vivado 7 series library?*
+*What would you guess is the preferred entry method for a MUXCY .. if it existed in the Vivado 7 series library?* **It doesnt exist in Vivado 7 series library**
 
-*Why do you think Xlinix still supports MUXCY (because we used it!), yet don't document it?*
+*Why do you think Xlinix still supports MUXCY (because we used it!), yet don't document it?* 
 
 *Xilinix was the [first FPGA vendor](http://hardwarebee.com/list-fpga-companies/) to start shipping LUT6 FPGAs. Intel FPGAs come from purchasing Xilinx's major competitor for years .. and ships a LUT6. How does [Flex-Logix](http://www.flex-logix.com/6lut-faster-denser/) fit into this competition?*
 
@@ -80,40 +84,52 @@ ___
 
 *What does [Flex-Logix name it's equivalent](http://www.flex-logix.com/dsp-applications/) of LUT6?*  
 
-*Is the code on this [web site](http://www.flex-logix.com/dsp-applications/) verilog or it's competitor VHDL?*
+*Is the code on this [web site](http://www.flex-logix.com/dsp-applications/) verilog or it's competitor VHDL?* **VHDL**
 
-*What class at HCC teaches you what a [FIR](http://www.flex-logix.com/dsp-applications/) is?* 
+*What class at HCC teaches you what a [FIR](http://www.flex-logix.com/dsp-applications/) is?*  **I dont know. I guess ENES 205**
 
 ## 2Decoder
 
 #### Port Diagram
 
+![1550856322447](1550856322447.png)
+
 #### Verilog Code
+
+![1550856508946](1550856508946.png)
 
 #### RTL Schematic Screen shot
 
+![1550858184567](1550858184567.png)
+
 #### Synthesis Schematic Screen shot
+
+![1550858126572](1550858126572.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1550857428851](1550857428851.png)
+
+![1550857377245](1550857377245.png)
+
 #### Testing
 
-
+3 input -> 16 outputs. enter 1 input, 2 LED light up at the same time. It means it has double decoder circuit on this verilog code.
 
 ___
 
 #### Prompts 
 
-*How many of the outputs of the Decoder are positive at any given instant in time?*
+*How many of the outputs of the Decoder are positive at any given instant in time?* **2 outputs**
 
 *When the Decoder changes it's output, what happens among these choices:*
 
-1. *Do all outputs go to 0 before the next set of outputs are displayed?* 
-2. *Do the new 1(s) appear along with the previous 1(s) simultaneously?*
-3. *Does/Do the output(s) flicker in some unknown way based on impurities or differences in the fabric of the FPGA?*
-4. *Do we have the tools to figure out what the answer is?*	
+1. *Do all outputs go to 0 before the next set of outputs are displayed?*  **Yes**
+2. *Do the new 1(s) appear along with the previous 1(s) simultaneously?* **Yes**
+3. *Does/Do the output(s) flicker in some unknown way based on impurities or differences in the fabric of the FPGA?* **The outputs flicker in differences in the fabric of the FPGA**
+4. *Do we have the tools to figure out what the answer is?* **No**
 
-*Given the concept of an [infinitesimal](https://en.wikipedia.org/wiki/Infinitesimal), is it ever possible for two outputs, from any circuit to change simultaneously?*
+*Given the concept of an [infinitesimal](https://en.wikipedia.org/wiki/Infinitesimal), is it ever possible for two outputs, from any circuit to change simultaneously?* **I dont know, I guess Yes**
 
 
 
@@ -133,6 +149,74 @@ It is a tricky, logic problem. Look at the first two rows of the truth table bel
 ![img](table4.JPG)
 
 There four vivado projects. There are three different verilog expressions introduced. The first synthesizeable verilog code has been introduced. Do one port interface diagram. Do four Verilog code screen shots and four screen shots of everything else. The goal is to compare them.  Just describe how the three test below.
+
+### 3.1 RTL_One_Hot
+
+#### Port Diagram
+
+
+
+#### Verilog Code
+
+![1550863385956](1550863385956.png)
+
+#### RTL Schematic Screen shot
+
+![1550863355149](1550863355149.png)
+
+#### Synthesis Schematic Screen shot
+
+![1550866120464](1550866120464.png)
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+*It included LUT, MUX, and Flop&Latch*
+
+![1550863094554](1550863094554.png)
+
+![1550863176399](1550863176399.png)
+
+![1550863295903](1550863295903.png)
+
+#### Testing
+
+
+
+### 3.2 RTL_Data_Flow
+
+#### Port Diagram
+
+#### Verilog Code
+
+
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+
+
+### 3.3 Gate
+
+#### Port Diagram
+
+#### Verilog Code
+
+#### RTL Schematic Screen shot
+
+#### Synthesis Schematic Screen shot
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+#### Testing
+
+
+
+### 3.4 All Three
 
 #### Port Diagram
 
