@@ -147,15 +147,15 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 #### RTL Schematic Screen shot
 
-
+![1550866613421](1550866613421.png)
 
 #### Synthesis Schematic Screen shot
 
-![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\SSS_4.PNG)
+![SSS_4](SSS_4.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\ID_4.PNG)
+![ID_4](ID_4.PNG)
 
 #### Testing
 
