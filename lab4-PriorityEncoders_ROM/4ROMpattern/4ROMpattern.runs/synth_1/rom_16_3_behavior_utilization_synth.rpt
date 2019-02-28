@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Tue Feb 12 04:55:55 2019
-| Host         : DESKTOP-KB2R4MG running 64-bit major release  (build 9200)
+| Date         : Thu Feb 28 15:49:03 2019
+| Host         : SET253-11C running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rom_16_3_behavior_utilization_synth.rpt -pb rom_16_3_behavior_utilization_synth.pb
 | Design       : rom_16_3_behavior
 | Device       : 7a100tcsg324-1

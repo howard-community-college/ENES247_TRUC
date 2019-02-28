@@ -214,13 +214,19 @@ An alternative to if, if, if, if, if, ... if else is a case command. Both Case a
 
 #### Port Diagram
 
-#### Verilog Code ![1549965418284](1549965418284.png)
+![1551391672638](1551391672638.png)
 
-#### RTL Schematic Screen shot![1549965505259](1549965505259.png)
+#### Verilog Code 
 
-#### Synthesis Schematic Screen shot
+![1551386900317](1551386900317.png)
+
+#### RTL Schematic Screen shot![1549965418284](1549965418284.png)
+
+#### Synthesis Schematic Screen shot![1549965505259](1549965505259.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1551387339483](1551387339483.png)
 
 #### Testing
 
@@ -234,15 +240,15 @@ This program grabs data in a text file and puts it in ROM. There are several que
 
 ![1549963293335](1549963293335.png)
 
-Google found [this](https://forums.xilinx.com/t5/Synthesis/Pathnames-for-Verilog-readmem-Datafiles-for-synthesis-Warning/td-p/775824) in response to typing in the error message.  *How many solutions to the problem are in the Xilinx user forum post?* 
+Google found [this](https://forums.xilinx.com/t5/Synthesis/Pathnames-for-Verilog-readmem-Datafiles-for-synthesis-Warning/td-p/775824) in response to typing in the error message.  *How many solutions to the problem are in the Xilinx user forum post?*  **only 1**
 
 *Describe the solution that works in words:* 
 
 ![1549963883327](1549963883327.png)
 
-*When is the file read by vivado (RTL analysis, synthesis, implementation or bitstream? )*
+*When is the file read by vivado (RTL analysis, synthesis, implementation or bitstream? )*  **bitstream**
 
-*What does this tell you about the file's sustainability (easy to identify, easy to modify, easy to find)?*
+*What does this tell you about the file's sustainability (easy to identify, easy to modify, easy to find)?* **easy to identify**
 
 *After following the forum's post, what is the path to where the file actually lives?*
 
