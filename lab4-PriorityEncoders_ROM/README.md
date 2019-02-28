@@ -146,93 +146,41 @@ What is the difference between the 0 net of the bus having a 1 on it asking for 
 
 It is a tricky, logic problem. Look at the first two rows of the truth table below. The first row is where none of the inputs are asking for attention. V=0 because Y1 and Y0 could be anything ... notice that the truth table is only 5 rows long. With four inputs, it could be 16 rows long. 
 
-![img](table4.JPG)
-
-There four vivado projects. There are three different verilog expressions introduced. The first synthesizeable verilog code has been introduced. Do one port interface diagram. Do four Verilog code screen shots and four screen shots of everything else. The goal is to compare them.  Just describe how the three test below.
-
-### 3.1 RTL_One_Hot
+![](table4.JPG)
 
 #### Port Diagram
 
-
-
-#### Verilog Code
-
-![1550863385956](1550863385956.png)
-
-#### RTL Schematic Screen shot
-
-![1550863355149](1550863355149.png)
-
-#### Synthesis Schematic Screen shot
-
-![1550866120464](1550866120464.png)
-
-#### Implementation Device screen shot zoomed in on something interesting
-
-*It included LUT, MUX, and Flop&Latch*
-
-![1550863094554](1550863094554.png)
-
-![1550863176399](1550863176399.png)
-
-![1550863295903](1550863295903.png)
-
-#### Testing
-
-
-
-### 3.2 RTL_Data_Flow
-
-#### Port Diagram
+![1551385976073](1551385976073.png)
 
 #### Verilog Code
 
-
-
-#### RTL Schematic Screen shot
-
-#### Synthesis Schematic Screen shot
-
-#### Implementation Device screen shot zoomed in on something interesting
-
-#### Testing
-
-
-
-### 3.3 Gate
-
-#### Port Diagram
-
-#### Verilog Code
+![1551382036233](1551382036233.png) 
 
 #### RTL Schematic Screen shot
 
-#### Synthesis Schematic Screen shot
-
-#### Implementation Device screen shot zoomed in on something interesting
-
-#### Testing
-
-
-
-### 3.4 All Three
-
-#### Port Diagram
-
-#### Verilog Code
-
-#### RTL Schematic Screen shot
+![1551382094909](1551382094909.png)
 
 #### Synthesis Schematic Screen shot
 
+![1551382397675](1551382397675.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+*4 Lux connected*
+
+![1551382261057](1551382261057.png)
+
+![1551382310641](1551382310641.png)
 
 #### Testing
 
+Start from D7, when D7 turn on LED go from Vdataflow to Y0, it does care about the next code D6, and doesn't care the rest from D5 to D0. Keep D7 and input D6, it does care about the next one is D5 and D4 to D0 does not matter.... etc
 
+D7 is the one keep the progress reset of not. 
 
----
+That's the reason to make the truth table just have n+1 rows (n is the input)
+
+------
 
 #### Prompts
 
@@ -240,7 +188,7 @@ There four vivado projects. There are three different verilog expressions introd
 
 *The first synthesizable System Verilog commands have been introduced. How can you tell by the source verilog file extension?*  
 
-**Where in the verilog "new project sequence of steps" are you given the option of creating system verilog or just plane verilog?*
+** Where in the verilog "new project sequence of steps" are you given the option of creating system verilog or just plane verilog?* **Creating system verilog**
 
 *In what way does the DataFlow implementation use the if command?*
 
@@ -259,8 +207,6 @@ There four vivado projects. There are three different verilog expressions introd
 *We have been told that implementation within the FGPA doesn't matter from a net and leaf cell count point of view. We don't see obvious controls that specify where within the chip everything is implemented. (It looks like resources next to the switch and LED pads are being used constantly.) But real quick in the future, speed is going to matter. Which of these priority encoder looks like it will be the fastest?*
 
 *Why is speed not important to us right now?*
-
-*Why is the for loop called [One-Hot](https://en.wikipedia.org/wiki/One-hot)?* 
 
 An alternative to if, if, if, if, if, ... if else is a case command. Both Case and If else Case command syntax was part of verilog.  This is why it is called "data_path". *Why do you think the if if if ...if else command introduced with System Verilog?* 
 
