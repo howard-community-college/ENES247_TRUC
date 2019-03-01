@@ -256,13 +256,13 @@ Google found [this](https://forums.xilinx.com/t5/Synthesis/Pathnames-for-Verilog
 
 Look at the .txt file. 
 
-*How many bits per row?*
+*How many bits per row?* **3 bits**
 
-*How many rows?* 
+*How many rows?*  **16 rows**
 
-*Why so many rows?*
+*Why so many rows?* **4 inputs given 16outputs**
 
-*What do the bits in the text file represent?*
+*What do the bits in the text file represent?* **000 represent lt gt eq**
 
 *A [Mips CPU](https://en.wikipedia.org/wiki/MIPS_architecture#Jump_and_branch) contains a circuit similar to this. When does the circuit execute?*  
 
