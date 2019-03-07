@@ -1,0 +1,600 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 6064
+License: Customer
+
+Current time: 	Thu Mar 07 16:16:32 EST 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	SET253-08U
+User home directory: C:/Users/SET253-08U.HCCMAIN
+User working directory: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/SET253-08U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/SET253-08U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/SET253-08U.HCCMAIN/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/vivado.log
+Vivado journal file location: 	C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/vivado.jou
+Engine tmp dir: 	C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/.Xil/Vivado-6064-SET253-08C
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 609 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\SET253-08U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab5-Latches_FlipFlops\lab5_1_1\Lab5_1_1_SRLatch\Lab5_1_1_SRLatch.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 90 MB (+92413kb) [00:00:10]
+// [Engine Memory]: 635 MB (+514124kb) [00:00:10]
+// [GUI Memory]: 105 MB (+10955kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  3497 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 702 MB. GUI used memory: 51 MB. Current time: 3/7/19, 4:16:36 PM EST
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 720.477 ; gain = 127.820 
+// [Engine Memory]: 704 MB (+39098kb) [00:00:14]
+// Project name: Lab5_1_1_SRLatch; location: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 754 MB (+15756kb) [00:00:22]
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Mar  7 16:16:45 2019] Launched synth_1... Run output will be captured here: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/synth_1/runme.log [Thu Mar  7 16:16:45 2019] Launched impl_1... Run output will be captured here: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SR_latch_dataflow (SR_latch_dataflow.v)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SR_latch_dataflow (SR_latch_dataflow.v)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: SR_latch_dataflow 
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 54 MB. Current time: 3/7/19, 4:16:54 PM EST
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,089 MB. GUI used memory: 53 MB. Current time: 3/7/19, 4:17:02 PM EST
+// [Engine Memory]: 1,093 MB (+315808kb) [00:00:39]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,187 MB (+41765kb) [00:00:39]
+// Xgd.load filename: C:/Xilinx/Vivado/2018.3/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 0.7s
+// [GUI Memory]: 125 MB (+14813kb) [00:00:41]
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2426 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 846.742 ; gain = 71.051 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'SR_latch_dataflow' [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/sources_1/imports/lab5_1_1/SR_latch_dataflow.v:6] INFO: [Synth 8-6155] done synthesizing module 'SR_latch_dataflow' (1#1) [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/sources_1/imports/lab5_1_1/SR_latch_dataflow.v:6] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 860.055 ; gain = 84.363 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 860.055 ; gain = 84.363 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 860.055 ; gain = 84.363 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc] Finished Parsing XDC File [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SR_latch_dataflow_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/SR_latch_dataflow_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1129.055 ; gain = 0.000 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1129.055 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1207.996 ; gain = 432.305 
+// Tcl Message: 7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1207.996 ; gain = 432.305 
+// 'dQ' command handler elapsed time: 14 seconds
+// Elapsed time: 13 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// [GUI Memory]: 138 MB (+6902kb) [00:00:49]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SR_latch_dataflow.v", 2); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SR_latch_dataflow.v", 2); // k (j, cp)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4DDR_Master.xdc]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SR_latch_dataflow.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4DDR_Master.xdc", 3); // k (j, cp)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SR_latch_dataflow.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// g (cp): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (g)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,246 MB. GUI used memory: 77 MB. Current time: 3/7/19, 4:18:48 PM EST
+// Engine heap size: 1,246 MB. GUI used memory: 77 MB. Current time: 3/7/19, 4:18:48 PM EST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // g (cp)
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,665 MB (+438579kb) [00:02:36]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,665 MB. GUI used memory: 57 MB. Current time: 3/7/19, 4:18:59 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1501 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1706.539 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1706.539 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1706.539 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1764.477 ; gain = 512.523 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 17 seconds
+// [GUI Memory]: 150 MB (+5197kb) [00:02:40]
+// Elapsed time: 15 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 96958, 2425013); // D (I, cp)
+// Device view-level: 0.9
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 170442, 2692977); // D (I, cp)
+// Device view-level: 1.5
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // u (f, cp): FALSE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 0.5
+// Device view-level: 2.2
+// HMemoryUtils.trashcanNow. Engine heap size: 1,745 MB. GUI used memory: 99 MB. Current time: 3/7/19, 4:19:10 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 42932, 351873); // D (I, cp)
+// Device view-level: 3.4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 43527, 353644); // D (I, cp)
+// Device view-level: 4.0
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // u (f, cp): TRUE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 4.2
+// Device view-level: 4.1
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 496651, 2831411); // D (I, cp)
+// Device select: 'Site - SLICE_X0Y101'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 81450, 464347, 1274, 587); // U (k, cp)
+// PAPropertyPanels.initPanels (Site: SLICE_X0Y101) elapsed time: 0.2s
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 496669, 2831454); // D (I, cp)
+// Device select: 'Net - Qbar_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 81453, 464354, 1274, 587); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,748 MB. GUI used memory: 105 MB. Current time: 3/7/19, 4:19:17 PM EST
+// Device view-level: 3.8
+// [Engine Memory]: 1,759 MB (+10608kb) [00:02:58]
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 497154, 2831515); // D (I, cp)
+// Device select: 'Site Wire - AX'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 54355, 309576, 1274, 587); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 497621, 2831597); // D (I, cp)
+// Device select: 'Net - Q_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 54406, 309585, 1274, 587); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 497273, 2831332); // D (I, cp)
+// Device select: 'Site - SLICE_X0Y101'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 54368, 309556, 1274, 587); // U (k, cp)
+// [GUI Memory]: 159 MB (+2155kb) [00:03:10]
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 503456, 2830783); // D (I, cp)
+// Device select: 'Net - Qbar_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 55044, 309496, 1274, 587); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,762 MB. GUI used memory: 107 MB. Current time: 3/7/19, 4:19:34 PM EST
+// Device view-level: 3.6
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 103 MB. Current time: 3/7/19, 4:19:41 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 103 MB. Current time: 3/7/19, 4:19:41 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 103 MB. Current time: 3/7/19, 4:19:45 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 103 MB. Current time: 3/7/19, 4:19:45 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 104 MB. Current time: 3/7/19, 4:19:46 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 103 MB. Current time: 3/7/19, 4:19:46 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 104 MB. Current time: 3/7/19, 4:19:47 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 103 MB. Current time: 3/7/19, 4:19:49 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 103 MB. Current time: 3/7/19, 4:19:49 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,764 MB. GUI used memory: 103 MB. Current time: 3/7/19, 4:19:50 PM EST
+// Device view-level: 3.8
+// HMemoryUtils.trashcanNow. Engine heap size: 1,811 MB. GUI used memory: 105 MB. Current time: 3/7/19, 4:19:55 PM EST
+// Device view-level: 3.6
+// Device view-level: 3.4
+// Device view-level: 3.2
+// Device view-level: 3.0
+// HMemoryUtils.trashcanNow. Engine heap size: 1,842 MB. GUI used memory: 105 MB. Current time: 3/7/19, 4:20:14 PM EST
+// Device view-level: 2.7
+// Device view-level: 2.5
+// HMemoryUtils.trashcanNow. Engine heap size: 1,842 MB. GUI used memory: 105 MB. Current time: 3/7/19, 4:20:15 PM EST
+// Device view-level: 2.3
+// [GUI Memory]: 177 MB (+10555kb) [00:03:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,842 MB. GUI used memory: 105 MB. Current time: 3/7/19, 4:20:18 PM EST
+// Device view-level: 2.1
+// Device view-level: 1.8
+// HMemoryUtils.trashcanNow. Engine heap size: 1,842 MB. GUI used memory: 106 MB. Current time: 3/7/19, 4:20:20 PM EST
+// Elapsed time: 76 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 201126, 2787638); // D (I, cp)
+// Device view-level: 2.7
+selectButton(RDIResource.GraphicalView_PREVIOUS, "Device_previousview"); // B (f, cp)
+// Device view-level: 1.8
+// [Engine Memory]: 1,851 MB (+4679kb) [00:04:36]
+// Elapsed time: 17 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 238398, 2827374); // D (I, cp)
+// Device select: 'Net - S_IBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 678, 8041, 1274, 587); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 502465, 2830187); // D (I, cp)
+// Device select: 'Net - Qbar_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 1429, 8049, 1274, 587); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,851 MB. GUI used memory: 106 MB. Current time: 3/7/19, 4:21:23 PM EST
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 502816, 2830890); // D (I, cp)
+// Device select: 'Net - Qbar_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 1430, 8051, 1274, 587); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 526375, 2831242); // D (I, cp)
+// Device select: 'Net - R_IBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 1497, 8052, 1274, 587); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 506332, 2830890); // D (I, cp)
+// Device select: 'Net - Qbar_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 1440, 8051, 1274, 587); // U (k, cp)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 505277, 2831945); // D (I, cp)
+// Device select: 'Net - Q_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 1437, 8054, 1274, 587); // U (k, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,851 MB. GUI used memory: 108 MB. Current time: 3/7/19, 4:21:34 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,851 MB. GUI used memory: 129 MB. Current time: 3/7/19, 4:21:36 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,854 MB. GUI used memory: 107 MB. Current time: 3/7/19, 4:21:37 PM EST
+// Elapsed time: 10 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 503871, 2829835); // D (I, cp)
+// Device select: 'Net - Qbar_OBUF'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 1433, 8048, 1274, 587); // U (k, cp)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SR_latch_dataflow.v", 2); // k (j, cp)
+selectCodeEditor("SR_latch_dataflow.v", 188, 263); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("SR_latch_dataflow.v", 38, 211); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("SR_latch_dataflow.v", 180, 247); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u (Q, cp)
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: SR_latch_dataflow 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,854 MB. GUI used memory: 108 MB. Current time: 3/7/19, 4:23:27 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1851 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2316.680 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'SR_latch_dataflow' [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/sources_1/imports/lab5_1_1/SR_latch_dataflow.v:6] INFO: [Synth 8-6155] done synthesizing module 'SR_latch_dataflow' (1#1) [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/sources_1/imports/lab5_1_1/SR_latch_dataflow.v:6] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2316.680 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2316.680 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2316.680 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc] Finished Parsing XDC File [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/SR_Latch.srcs/constrs_1/imports/lab5_1_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SR_latch_dataflow_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/SR_latch_dataflow_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2316.680 ; gain = 0.000 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2316.680 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2316.680 ; gain = 0.000 
+// Tcl Message: 6 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2316.680 ; gain = 0.000 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+dismissDialog("Open Elaborated Design"); // bx (cp)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 35, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Mar  7 16:23:43 2019] Launched synth_1... Run output will be captured here: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/synth_1/runme.log [Thu Mar  7 16:23:43 2019] Launched impl_1... Run output will be captured here: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SR_latch_dataflow.v", 2); // k (j, cp)
+selectCodeEditor("SR_latch_dataflow.v", 127, 214); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 11 seconds
+selectCodeEditor("SR_latch_dataflow.v", 6, 212); // cl (w, cp)
+selectCodeEditor("SR_latch_dataflow.v", 103, 210, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // X (al, Popup.HeavyWeightWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af (al, Popup.HeavyWeightWindow)
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys4DDR_Master.xdc", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SR_latch_dataflow.v", 2); // k (j, cp)
+selectCodeEditor("SR_latch_dataflow.v", 98, 218); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 36, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cQ, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3559 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EED3A 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,822 MB. GUI used memory: 119 MB. Current time: 3/7/19, 4:26:10 PM EST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/impl_1/SR_latch_dataflow.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// [Engine Memory]: 2,824 MB (+923027kb) [00:09:46]
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/impl_1/SR_latch_dataflow.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 97 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SR_latch_dataflow.v", 90, 208); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("SR_latch_dataflow.v", 85, 212); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("SR_latch_dataflow.v", 183, 410); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 34, true); // u (Q, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 34, true); // u (Q, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 33, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Thu Mar  7 16:28:42 2019] Launched synth_1... Run output will be captured here: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/synth_1/runme.log [Thu Mar  7 16:28:42 2019] Launched impl_1... Run output will be captured here: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,842 MB. GUI used memory: 119 MB. Current time: 3/7/19, 4:28:44 PM EST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 127 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/impl_1/SR_latch_dataflow.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (cp)

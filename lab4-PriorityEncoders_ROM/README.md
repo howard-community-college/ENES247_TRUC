@@ -272,13 +272,23 @@ Your goal is to create a circuit that multiplies two bits together. Use the ROM.
 
 #### Port Diagram
 
+![1551986544760](1551986544760.png)
+
 #### Verilog Code
+
+![1551985777759](1551985777759.png)
 
 #### RTL Schematic Screen shot
 
+![1551985717845](1551985717845.png)
+
 #### Synthesis Schematic Screen shot
 
+![1551986027095](1551986027095.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1551985979767](1551985979767.png)
 
 #### Testing
 

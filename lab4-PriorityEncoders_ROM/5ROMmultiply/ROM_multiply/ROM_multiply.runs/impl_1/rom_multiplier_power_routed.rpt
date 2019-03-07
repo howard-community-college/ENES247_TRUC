@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Fri Mar  1 15:34:15 2019
-| Host             : SET253-14C running 64-bit major release  (build 9200)
+| Date             : Thu Mar  7 14:11:32 2019
+| Host             : SET253-08C running 64-bit major release  (build 9200)
 | Command          : report_power -file rom_multiplier_power_routed.rpt -pb rom_multiplier_power_summary_routed.pb -rpx rom_multiplier_power_routed.rpx
 | Design           : rom_multiplier
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.004        |
+| Total On-Chip Power (W)  | 3.005        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.894        |
+| Dynamic (W)              | 2.896        |
 | Device Static (W)        | 0.109        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 71.3         |
@@ -52,12 +52,12 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.010 |        4 |       --- |             --- |
-|   LUT as Logic |     0.010 |        2 |     63400 |           <0.01 |
-| Signals        |     0.034 |        8 |       --- |             --- |
+| Slice Logic    |     0.011 |        4 |       --- |             --- |
+|   LUT as Logic |     0.011 |        2 |     63400 |           <0.01 |
+| Signals        |     0.035 |        8 |       --- |             --- |
 | I/O            |     2.850 |        8 |       210 |            3.81 |
 | Static Power   |     0.109 |          |           |                 |
-| Total          |     3.004 |          |           |                 |
+| Total          |     3.005 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,7 +67,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.085 |       0.060 |      0.025 |
+| Vccint    |       1.000 |     0.087 |       0.062 |      0.025 |
 | Vccaux    |       1.800 |     0.123 |       0.104 |      0.019 |
 | Vcco33    |       3.300 |     0.806 |       0.802 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -134,7 +134,7 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| rom_multiplier |     2.894 |
+| rom_multiplier |     2.896 |
 +----------------+-----------+
 
 

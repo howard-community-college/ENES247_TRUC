@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1551472390">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1551985789">
   <File Type="BITSTR-BMM" Name="rom_multiplier_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="rom_multiplier_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="rom_multiplier_timing_summary_init.rpt"/>

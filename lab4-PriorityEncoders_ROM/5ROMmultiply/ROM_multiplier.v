@@ -22,6 +22,6 @@ module rom_multiplier(
 	
 	assign ROM_data = ROM[ROM_addr];	// reading ROM content at the address ROM_addr
 
-  	initial $readmemb ("ROM_multiplier.txt", ROM, 0, 16);   // load ROM content from ROM_multiplier.txt file
+  	initial $readmemb ("ROM_multiplier.txt", ROM, 0, 15);   // load ROM content from ROM_multiplier.txt file
 
 endmodule
