@@ -41,3 +41,5 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_1/Lab5_1_1_SRLatch/Lab5_1_1_SRLatch.runs/impl_1/SR_latch_dataflow.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_design impl_1
+close_design

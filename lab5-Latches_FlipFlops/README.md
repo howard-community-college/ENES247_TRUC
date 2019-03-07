@@ -21,9 +21,11 @@ The major take away from this lab is using the tb_bench and understanding what a
 
 ![1551987634161](1551987634161.png)
 
-The white wire showing the loop is coming back
+The white wire showing the loop is coming back to R and  afrom Qbar
 
 ![1551990554013](1551990554013.png)
+
+Another 
 
 #### Testing
 
@@ -43,5 +45,4 @@ does it different with the expected SR latch ?  **Yes**
 
 It supported to have two loop,  But it's only one loop and another 1 go through the LED and controlled by the switch. It might be because of the code given the initial value is Q = 1 and Qbar = 1
 
-## 5_1_2SR_Latch
-
+## 5_1_2_Gated Latch
