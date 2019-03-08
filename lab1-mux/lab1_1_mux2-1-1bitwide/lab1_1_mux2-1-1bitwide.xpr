@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/SET253-01U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_1_mux2-1-1bitwide/lab1_1_mux2-1-1bitwide.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab1-mux/lab1_1_mux2-1-1bitwide/lab1_1_mux2-1-1bitwide.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="05f1eba99a424ff78c8ad59bfcad4979"/>

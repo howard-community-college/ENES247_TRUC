@@ -47,7 +47,7 @@ SW[0] is x, SW[1] is y, SW[2] is the select line and LED[0] is the output m. SW[
 
 *White arrows in the screen shot above are helping us see what?* **to help us to see input, select line and output**
 
-*How does Data flow in the fpga from left to right, right to left, bottom up, top down?*
+*How does Data flow in the fpga from left to right, right to left, bottom up, top down?* **left to right**
 
 *What is the verilog symbol for the white line going up at an angle in the device diagram?* **I dont understand**
 
@@ -77,17 +77,17 @@ One select line now selects between two pair of inputs and displays one of the p
 
 #### Questions/Tasks
 
-*Explain how to zoom in on the above Device Screen Shot.*
+*Explain how to zoom in on the above Device Screen Shot.* **On the Implementation Device, see the green dot on the screen, than zoom in that green dot to see clearly the design **
 
-*Do you see pictures of muxes in the Device Screen Shot? Are they used?* **Yes**
+*Do you see pictures of muxes in the Device Screen Shot? Are they used?* **No, they are used by LUT**
 
-*Which stage of the work flow choose the specific LUT above?*
+*Which stage of the work flow choose the specific LUT above?* **Synthesis **
 
-*Which stage of the work flow chooses the green lines?*
+*Which stage of the work flow chooses the green lines?* ****
 
-*What do the white lines represent?* 
+*What do the white lines represent?* **The inputs and the output**
 
-*What do the spots where white lines cross represent?*
+*What do the spots where white lines cross represent?* 
 
 ## lab1_2_mux2-1-tristate
 
@@ -117,19 +117,23 @@ Two muxes are implemented using the same inputs with the same select line.  So i
 
 *Which of the two verilog implemented muxes actually created a tristate symbol in the RTL schematic?* **g1_i and h_i**
 
-*After Synthesis, which of the two verilog implemented muxes looks more simple?*
+*After Synthesis, which of the two verilog implemented muxes looks more simple?* **RTL_Mux and RTL_Tristate look more simple**
 
-*After Synthesis, why hasn't Vivado detected that the two circuits are identical?*
+*After Synthesis, why hasn't Vivado detected that the two circuits are identical?* **because it has combine  in one circuits**
 
-*After implementation, does the schematic change? If so, put a screen shot here.*
+*After implementation, does the schematic change? **Yes** If so, put a screen shot here.*![1548682159527](1548682159527.png)
 
-*Do the insides of the device reflect the schematic .. after implementation?*
+*Do the insides of the device reflect the schematic .. after implementation?* **Yes**
 
-*What are the truth tables of the one or two LUT(s)? Put a screen shot(s) here.*
+*What are the truth tables of the one or two LUT(s)? Put a screen shot(s) here.*  
 
-*Are the truth tables the same or different? Why would Vivado do this? Is this a bug in Vivado?*
+![1552064534443](1552064534443.png)
 
-*Do some tests modifying this project. Can you make the one line of code mux into a 4 input, 2 select line, 1 output mux in one line?*
+![1552064587522](1552064587522.png)
+
+*Are the truth tables the same or different? **Different** Why would Vivado do this? **Depend on the input of the LUX** Is this a bug in Vivado?* **Yes**
+
+*Do some tests modifying this project. Can you make the one line of code mux into a 4 input, 2 select line, 1 output mux in one line?* **Yes**
 
 ## lab1_2_tb_mux2-1-2bitwide
 
@@ -163,7 +167,7 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 *tb stands for what?* **test bench**
 
-*What verilog code is the top level module, the test or the circuit?* **the circuit**
+*What verilog code is the top level module, the test or the circuit?* **top level module**
 
 *The verilog code shares the same port interface as the previous 2bit wide circuit. How is the verilog code different?* **It has the  top level and lower level**
 
@@ -173,13 +177,13 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 *In the simulation, what do the green boxes with numbers in them mean?*
 
-*In the simulation, was all the activity captured or are their changes to the left of the yellow vertical line?*
+*In the simulation, was all the activity captured or are their changes to the left of the yellow vertical line?* **the activity captured**
 
-*Is this simulation associated with RTL, Synthesis or Implementation Vivado analysis?*
+*Is this simulation associated with RTL, Synthesis or Implementation Vivado analysis?* **Yes**
 
-*Is this a physics simulation or logic simulation?*
+*Is this a physics simulation or logic simulation?* **logic simulation**
 
-*Can the previous, port-interface identical, circuit be simulated without test verilog code?*
+*Can the previous, port-interface identical, circuit be simulated without test verilog code?* **No**
 
 *If it can be, take a screenshot of the Simulation and compare with this one.*
 
@@ -189,17 +193,17 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 ![1548766256422](1548766256422.png)
 
-*Where does the test get it's input?* 
+*Where does the test get it's input?*  **Inside the ()**
 
-*Where does it's output go?*
+*Where does it's output go?* **Inside the ()**
 
 **The next questions** are about this line of code: ![1548766113080](1548766113080.png)
 
-*Which circuit above has the same format of three instructions separated by a space?* 
+*Which circuit above has the same format of three instructions separated by a space?* **DUT circuit**
 
-*Does the first section refer to the circuit or the test it's self?*
+*Does the first section refer to the circuit or the test it's self?* **yes**
 
-*DUT stands for Device Under Test. Can this name be changed?*
+*DUT stands for Device Under Test. Can this name be changed?* **Yes**
 
 *What were some of the names used instead of DUT in the circuit above?* 
 
@@ -217,19 +221,19 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 ![1548767194951](1548767194951.png)
 
-*Is the word "end" the end of the "begin" or the end of initial?*
+*Is the word "end" the end of the "begin" or the end of initial?* **the word "end" is the end of the "begin"**
 
-*Why isn't there a semi-colon after "end"?*
+*Why isn't there a semi-colon after "end"?* 
 
-*Are the commands under begin executed sequentially or in parallel?*
+*Are the commands under begin executed sequentially or in parallel?* **in sequentially**
 
-*Are all the possible combinations of x, y and s tested?* 
+*Are all the possible combinations of x, y and s tested?*  **yes**
 
-*How many combinations of x,y and s are there?*
+*How many combinations of x,y and s are there?* **9**
 
 *Is there a reason that the #20; is intended?*
 
-*Does white space matter in verilog?*
+*Does white space matter in verilog?* **No**
 
 **Read these articles** ... about using initial: [argument](https://forums.xilinx.com/t5/Design-Methodologies-and/quot-initial-quot-statement-with-quot-output-quot-variables/td-p/485782), [pro](http://billauer.co.il/blog/2018/02/verilog-initial-xst-quartus-vivado/), [con](https://www.quora.com/Why-are-initial-blocks-synthesizable-in-FPGA-and-not-in-ASIC), . 
 
@@ -241,9 +245,7 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 *What concept is the initial concept linked up to ... that we haven't discussed?* 
 
-*Make up a rule for yourself regarding using verilog initial command now. You can change in the future. What is this rule?*
-
-**Bigger Picture**
+*Make up a rule for yourself regarding using verilog initial command now. You can change in the future. What is this rule?* **Bigger Picture**
 
 Here are some answered questions that you may have.
 *Are there ways to write a verilog test that creates messages such as "pass" or "fail"?* **Yes**
@@ -274,17 +276,21 @@ Now answer these questions:
 
 #### RTL Schematic Screen shot
 
-[![1549567488005](C:\Users\SET253-21U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1549567488005.png)]()
+![1552065303706](1552065303706.png)
 
 #### Synthesis Schematic Screen shot
 
-[![1549567958194](C:\Users\SET253-21U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1549567958194.png)]()
+![1552065349618](1552065349618.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-[![1549567910220](C:\Users\SET253-21U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1549567910220.png)]()
+![1552065422381](1552065422381.png)
 
 #### Testing
+
+When s off, x[0] and x[1] is on so LED on. The y input doesn't matter
+
+When s on, y[0]  and y[1] is on so LED brighter. The x input doesn't matter
 
 #### Questions/Tasks
 
@@ -300,9 +306,9 @@ The @* is the clearest indication of verilog evolution and the difference betwee
 
 The always @* can not reference a clock. There is no clock in our circuit. It is combinational logic.  One can tell it is combinational logic by looking at the = sign in the begin/end code.  This means that it is executed in sequence .. at near the speed of light. 
 
-*reg stands for what?*
+*reg stands for what?* **register**
 
-*What is m driven by in the previous similar circuit?*
+*What is m driven by in the previous similar circuit?* 
 
 *What is a reg m driven by in this circuit .. when just looking at the verilog code?*
 
@@ -330,17 +336,19 @@ The simple mux circuits explored in this lab were created with various forms of 
 
 #### Verilog Code
 
-![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\VerilogCode_6.PNG)
+![](VerilogCode_6.PNG)
 
 #### RTL Schematic Screen shot
 
-![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\RTL_6.PNG)
+![](RTL_6.PNG)
 
 #### Synthesis Schematic Screen shot
 
-![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\SSS_6.PNG)
+![](SSS_6.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
+
+
 
 #### Testing
 
@@ -371,17 +379,19 @@ In the Implementation Device screen, there are pictures of a mux. *Why does viva
 
 One of the ways we know what is going on is to predict Vivado's behavior. This circuit uses two select lines, but only selects between 3 inputs. Normally two select lines chooses between four inputs. So this is not quite a mux. 
 
-### Port Diagram
+#### Port Diagram
 
-#### Verilog Code![1548792158919](1548792158919.png)
+#### Verilog Code
+
+![1548792158919](1548792158919.png)
 
 #### RTL Schematic Screen shot
 
-![1549568969707](C:\Users\SET253-21U.HCCMAIN\AppData\Roaming\Typora\typora-user-images\1549568969707.png)
+
 
 #### Synthesis Schematic Screen shot
 
-![](C:\Users\SET253-21U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab1-mux\SSS_7.PNG)
+![](SSS_7.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
