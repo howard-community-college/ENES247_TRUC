@@ -8,6 +8,8 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 #### Port Interface
 
+![1552595495511](1552595495511.png)
+
 #### Verilog Code
 
 #### ![1549226191683](1549226191683.png)
@@ -18,17 +20,17 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 #### Synthesis Schematic
 
-![]()
+![1552595899234](1552595899234.png)
 
 #### Implementation Design Screen shot of something interesting
 
-
+![1552596536464](1552596536464.png)
 
 #### Testing
 
-***Using the switch from left to right to move the LED segment to the LED above the switch (normally on switch to normally off)***
+*Using the switch from left to right to move the LED segment to the LED above the switch (normally on switch to normally off)*
 
-***Using the switch from right to left (J15-R13) to display the specific number on the 7 segment***
+*Using the switch from right to left (J15-R13) to display the specific number on the 7 segment*
 
 
 
@@ -36,7 +38,7 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 *How is this project different from just hooking all the switches up to all the LEDs?**This can use the switch to all the LEDs and the 7 segment display too**
 
-*This project does something different from an output point of view than just selecting an LED. What output does something different?**nothing**
+*This project does something different from an output point of view than just selecting an LED. What output does something different? **nothing**
 
 *Can the decimal place (DP) be moved to a different display than the display the number is appearing on?* **Yes**
 
@@ -114,19 +116,31 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
 #### Synthesis Schematic
 
+![1552596374378](1552596374378.png)
+
 #### Implementation Design Screen shot of something interesting
+
+![1552596790903](1552596790903.png)
+
+![1552596866187](1552596866187.png)
+
+![1552596915421](1552596915421.png)
+
+![1552596960343](1552596960343.png)
 
 #### Testing
 
+
+
 #### Prompts
 
-*Does the verilog code above use constants?* 
+*Does the verilog code above use constants?*  **Yes**
 
-*Was the <u>obvious solution</u> obvious to you?* 
+*Was the <u>obvious solution</u> obvious to you?*  **Yes**
 
-*Did you see a verilog coding solution that was different than this one before looking at the code?*
+*Did you see a verilog coding solution that was different than this one before looking at the code?* **Yes**
 
-*Did you understand the verilog code's logic above after reading it?* 
+*Did you understand the verilog code's logic above after reading it?*  **A little bit confused but understand**
 
 *Do these solutions blind you .. prevent you from seeing other solutions than the one above?* 
 
@@ -147,6 +161,8 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 *Is this project more beautiful, easier to understand, less work to figure out what is going on in the first place?* 
 
 *Does the project you linked up use constants?* 
+
+
 
 ## Lab2_2_hexToBCD
 
