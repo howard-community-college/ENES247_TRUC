@@ -45,4 +45,6 @@ does it different with the expected SR latch ?  **Yes**
 
 It supported to have two loop,  But it's only one loop and another 1 go through the LED and controlled by the switch. It might be because of the code given the initial value is Q = 1 and Qbar = 1
 
+
+
 ## 5_1_2_Gated Latch

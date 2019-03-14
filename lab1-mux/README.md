@@ -348,9 +348,13 @@ The simple mux circuits explored in this lab were created with various forms of 
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-
+![1552579029295](1552579029295.png)
 
 #### Testing
+
+When Select on, LED m on depend on input x, and does not care about y
+
+When Select off, LED m on depend on input y, and does not care about x 
 
 #### Questions/Tasks
 
@@ -373,7 +377,7 @@ In the Implementation Device screen, there are pictures of a mux. *Why does viva
 
 *When does vivado implement the CLB muxes?*
 
-*Is fast carry logic a control path or data path concept?* 
+*Is fast carry logic a control path or data path concept?*  **a control path concept**
 
 ## lab1_4_2-mux2-1inSequence
 
@@ -381,19 +385,23 @@ One of the ways we know what is going on is to predict Vivado's behavior. This c
 
 #### Port Diagram
 
+
+
 #### Verilog Code
 
 ![1548792158919](1548792158919.png)
 
 #### RTL Schematic Screen shot
 
-
+![1552579617223](1552579617223.png)
 
 #### Synthesis Schematic Screen shot
 
 ![](SSS_7.PNG)
 
 #### Implementation Device screen shot zoomed in on something interesting
+
+![1552579542581](1552579542581.png)
 
 #### Testing
 
