@@ -48,3 +48,159 @@ It supported to have two loop,  But it's only one loop and another 1 go through 
 
 
 ## 5_1_2_Gated Latch
+
+#### RTL Schematic Screen shot
+
+![1552588089335](1552588089335.png)
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+![1552588208956](1552588208956.png)
+
+The white line shows the loop, expected has two loops but when running it just only have 1 loop
+
+![1552588464295](1552588464295.png)
+
+#### Testing
+
+Enable = 0: The circuit go to remember state
+
+Enable = 1, Set = 1, Reset = 0 -> Q = 1 and Qbar = 0  --> set state
+
+Enable = 1, Set = 0, Reset =1 --> Q =0 and Qbar = 1 --> reset state
+
+Enable =1, Set = 1, Reset =1 --> Metastable state
+
+#### Prompt 
+
+test bench 
+
+![1552589869800](1552589869800.png)
+
+red place is the metastable state
+
+
+
+## 5_1_3_D_Latch
+
+#### RTL Schematic Screen shot
+
+![1552591269726](1552591269726.png)
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+![1552592214521](1552592214521.png)
+
+white line is the loop (Q_OBUF)(set state)
+
+![1552592271372](1552592271372.png)
+
+white line is Qbar_OBUF (reset state) 
+
+#### Testing
+
+D=1, Enable = 1 --> set state
+
+D=1, Enable = 0 --> hold state
+
+D=0, Enable=0 --> hold state
+
+D=0, Enable = 1 --> reset state
+
+#### Prompt 
+
+test bench 
+
+![1552593209558](1552593209558.png)
+
+red place is the latch state
+
+
+
+## 5_2_1_D_FlipFlop
+
+#### RTL Schematic Screen shot
+
+  
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+
+
+#### Testing
+
+
+
+#### Prompt 
+
+
+
+## 5_2_2_circuit
+
+#### RTL Schematic Screen shot
+
+
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+
+
+#### Testing
+
+
+
+#### Prompt 
+
+
+
+## 5_2_3_D_Flipflop_sync_reset_behavior
+
+#### RTL Schematic Screen shot
+
+
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+
+
+#### Testing
+
+
+
+#### Prompt 
+
+
+
+## 5_2_4_D_Flipflop_with_ce_and_sync_reset_behavior
+
+#### RTL Schematic Screen shot
+
+
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+
+
+#### Testing
+
+
+
+#### Prompt 
+
+
+
+## 5_2_5_T_Flipflop_enable_behavior
+
+#### RTL Schematic Screen shot
+
+
+
+#### Implementation Device screen shot zoomed in on something interesting
+
+
+
+#### Testing
+
+
+
+#### Prompt 

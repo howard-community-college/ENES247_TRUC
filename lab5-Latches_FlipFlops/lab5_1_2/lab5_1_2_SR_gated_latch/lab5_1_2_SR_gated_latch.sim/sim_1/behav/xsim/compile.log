@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_gated_latch_dataflow
+INFO: [VRFC 10-2458] undeclared symbol R_i, assumed default net type wire [C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow.v:14]
+INFO: [VRFC 10-2458] undeclared symbol S_i, assumed default net type wire [C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow.v:15]
+INFO: [VRFC 10-2458] undeclared symbol Q_i, assumed default net type wire [C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow.v:16]
+INFO: [VRFC 10-2458] undeclared symbol Qbar_i, assumed default net type wire [C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow.v:17]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/SR_gated_latch_dataflow_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SR_gated_latch_dataflow_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/lab5_1_2_SR_gated_latch/lab5_1_2_SR_gated_latch.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,102 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "SR_gated_latch_dataflow")
+(DATE "Thu Mar 14 14:52:21 2019")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2018.3")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE Enable_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1414.5:1485.1:1485.1) (1414.5:1485.1:1485.1))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Q_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3317.3:3519.4:3519.4) (3317.3:3519.4:3519.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT4")
+  (INSTANCE Q_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I3 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE Qbar_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (3332.0:3534.3:3534.3) (3332.0:3534.3:3534.3))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT3")
+  (INSTANCE Qbar_OBUF_inst_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I2 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I1 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+      (IOPATH I0 O (100.0:124.0:124.0) (100.0:124.0:124.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE R_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1409.0:1479.6:1479.6) (1409.0:1479.6:1479.6))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE S_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (1407.0:1477.6:1477.6) (1407.0:1477.6:1477.6))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "SR_gated_latch_dataflow")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT Enable_IBUF_inst/O Qbar_OBUF_inst_i_1/I0 (762.7:802.9:802.9) (762.7:802.9:802.9))
+      (INTERCONNECT Enable_IBUF_inst/O Q_OBUF_inst_i_1/I3 (762.7:802.9:802.9) (762.7:802.9:802.9))
+      (INTERCONNECT Q_OBUF_inst_i_1/O Q_OBUF_inst/I (763.7:803.9:803.9) (763.7:803.9:803.9))
+      (INTERCONNECT Q_OBUF_inst_i_1/O Q_OBUF_inst_i_1/I1 (426.5:449.0:449.0) (426.5:449.0:449.0))
+      (INTERCONNECT Q_OBUF_inst_i_1/O Qbar_OBUF_inst_i_1/I2 (426.5:449.0:449.0) (426.5:449.0:449.0))
+      (INTERCONNECT Qbar_OBUF_inst_i_1/O Qbar_OBUF_inst/I (763.7:803.9:803.9) (763.7:803.9:803.9))
+      (INTERCONNECT R_IBUF_inst/O Q_OBUF_inst_i_1/I0 (762.7:802.9:802.9) (762.7:802.9:802.9))
+      (INTERCONNECT S_IBUF_inst/O Qbar_OBUF_inst_i_1/I1 (762.7:802.9:802.9) (762.7:802.9:802.9))
+      (INTERCONNECT S_IBUF_inst/O Q_OBUF_inst_i_1/I2 (762.7:802.9:802.9) (762.7:802.9:802.9))
+      )
+    )
+)
+)
