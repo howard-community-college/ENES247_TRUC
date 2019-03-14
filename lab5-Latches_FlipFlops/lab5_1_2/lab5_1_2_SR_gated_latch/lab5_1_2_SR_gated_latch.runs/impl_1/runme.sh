@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/lab5_1_2_SR_gated_latch/lab5_1_2_SR_gated_latch.runs/impl_1'
+HD_PWD='C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/lab5_1_2_SR_gated_latch/lab5_1_2_SR_gated_latch.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

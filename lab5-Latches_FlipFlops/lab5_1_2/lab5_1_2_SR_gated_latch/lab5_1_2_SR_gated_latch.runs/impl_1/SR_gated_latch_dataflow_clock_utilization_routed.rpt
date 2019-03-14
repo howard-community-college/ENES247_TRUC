@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Mar  7 16:57:56 2019
-| Host         : SET253-08C running 64-bit major release  (build 9200)
+| Date         : Thu Mar 14 11:37:15 2019
+| Host         : GAUBIN running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file SR_gated_latch_dataflow_clock_utilization_routed.rpt
 | Design       : SR_gated_latch_dataflow
 | Device       : 7a100t-csg324
