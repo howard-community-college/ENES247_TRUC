@@ -130,6 +130,18 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
 #### Testing
 
+x[0] = 0, x[1]=0, x[2]=0, x[3] = 0 ---> number 1 light up on 7 segment
+
+x[0] = 0, x[1]=1, x[2]=0, x[3] = 0 ---> number 2 light up on 7 segment
+
+x[0] = 1, x[1]=1, x[2]=0, x[3] = 0 ---> number 3 light up on 7 segment
+
+x[0] = 0, x[1]=0, x[2]=1, x[3] = 0 ---> number 4 light up on 7 segment
+
+x[0] = 1, x[1]=0, x[2]=1, x[3] = 0 ---> number 5 light up on 7 segment
+
+x[0] = 0, x[1]=1, x[2]=1, x[3] = 0 ---> number 6 light up on 7 segment
+
 
 
 #### Prompts
@@ -148,19 +160,19 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
 *What is normal? For an engineer to create/see a complicated solution, and revisit the project requirements to see if the project is out of scope? Or design a minimal, elegant solution that perfectly matches the design requirements the first time?* 
 
-*For seg[6] "g" , the first term is  (**~x[3] & ~x[2] & ~x[1]** ).  What BCD symbols (0,1,2,3,4,5,6,7,8,9)  is it creating a 1 for?* 
+*For seg[6] "g" , the first term is  (**~x[3] & ~x[2] & ~x[1]** ).  What BCD symbols (0,1,2,3,4,5,6,7,8,9)  is it creating a 1 for?* **0**
 
-*For seg[6] "g" , the second term is  (**x[2] & x[1] & x[0]** ).  What BCD symbols (0,1,2,3,4,5,6,7,8,9)  is it creating a 1 for?* 
+*For seg[6] "g" , the second term is  (**x[2] & x[1] & x[0]** ).  What BCD symbols (0,1,2,3,4,5,6,7,8,9)  is it creating a 1 for?* **7**
 
-*Do these one's created for segment "g" of the display turn the g red LED off or on?*
+*Do these one's created for segment "g" of the display turn the g red LED off or on?* **turn the g red LED off**
 
-*If the circuit receives a hex B, what is going to be displayed on the seven seg display designed for BCD?*
+*If the circuit receives a hex B, what is going to be displayed on the seven seg display designed for BCD?* **1011**
 
 *Find an alternative verilog solution to this project and link it up here.* 
 
-*Is this project more beautiful, easier to understand, less work to figure out what is going on in the first place?* 
+*Is this project more beautiful, easier to understand, less work to figure out what is going on in the first place?*  **this project is easier to understand**
 
-*Does the project you linked up use constants?* 
+*Does the project you linked up use constants?*  **No**
 
 
 
@@ -190,21 +202,31 @@ Is this obvious to a electrical or computer engineer working in the field?  **Ye
 
 #### Testing
 
+hex [0] = 0 , hex[1]=0, hex [2] = 0 , hex[3]=0 --> carry = 0, BCD[0] = 0, BCD[1] = 0, BCD[2] = 0, BCD[3] = 0
+
+hex [0] = 0 , hex[1]=0, hex [2] = 0 , hex[3]=1 --> carry = 0, BCD[0] = 0, BCD[1] = 0, BCD[2] = 0, BCD[3] = 1
+
+...
+
+hex [0] = 0, hex[1]=1, hex [2] = 0 , hex[3]=1 --> carry = 1, BCD[0] = 0, BCD[1] = 0, BCD[2] = 0, BCD[3] = 0
+
+hex [0] = 1, hex[1]=1, hex [2] = 0 , hex[3]=1 --> carry = 1, BCD[0] = 1, BCD[1] = 0, BCD[2] = 0, BCD[3] = 0
+
 #### Prompts
 
-*A BEL is a [Basic Element of Logic](https://www.rapidwright.io/docs/Xilinx_Architecture.html).  Start reading the link. What is a routing BEL most similar to?*  
+*A BEL is a [Basic Element of Logic](https://www.rapidwright.io/docs/Xilinx_Architecture.html).  Start reading the link. What is a routing BEL most similar to?*   **mux**
 
 ![1549369911764](1549369911764.png)
 
-*What are PIPs?*
+*What are PIPs?* **Programmable Interconnect Point are programmable muxes that connect two wires together at the same title**
 
-*Can you see a PIP in the device Implementation screen shots above?*
+*Can you see a PIP in the device Implementation screen shots above?* **Yes**
 
-*What company wrote RapidWright?*
+*What company wrote RapidWright?* **Xilins, Inc**
 
-*What value is RapidWright adding to Vivado?*
+*What value is RapidWright adding to Vivado?* **I dont understand this question**
 
-*Given that there are other products similar to RapidWright from the same company, what does this tell you about the way the company develops software?*
+*Given that there are other products similar to RapidWright from the same company, what does this tell you about the way the company develops software?* **generally a 2D array of FSPs for single die products or two or more SLRs abutted vertically**
 
 *The always @\* means execute when anything on the right hand side of the equal signs changes. What is the only thing on the right hand side of the equal sign?*
 
@@ -226,9 +248,13 @@ This project was solved by a Xilinx instructor with the following four modules:
 
 *The RTL schematic is very interesting. It has a symbol for comparing and a symbol for subtracting. A normal gate is not used. What are the equivalent symbols in logisim? (Attach screen shots)*
 
+![1552675302141](1552675302141.png)
+
 *Are there any standard symbols for comparing and adding circuits on the internet? Spend 1 minute, link up what you can find that is close to what looks like a standard.* 
 
-*Spend 1 minute reading this [link](https://blog.digilentinc.com/fpga-configurable-logic-block/) with the goal of figuring out the difference between a SliceL and LUT. Write a phrase to describe how you are going to remember the difference .. for now ... Doesn't have to be correct. It is a hypothesis that you carry around with you.*
+*Spend 1 minute reading this [link](https://blog.digilentinc.com/fpga-configurable-logic-block/) with the goal of figuring out the difference between a SliceL and LUT. Write a phrase to describe how you are going to remember the difference .. for now ... Doesn't have to be correct. It is a hypothesis that you carry around with you.* **SLICEL allow FPGA to expand its functionality, LUT can serve to speed up processing by providing a set output for a given input, rather than requiring computation on the input data.**
+
+
 
 ## Lab2_3_hexTo7seg
 
@@ -248,7 +274,9 @@ The goal is to display BCD with an LED representing 1, the switches representing
 
 #### Implementation Design Screen shot of something interesting
 
+![1552667760032](1552667760032.png)
 
+![1552667846737](1552667846737.png)
 
 
 
@@ -295,23 +323,31 @@ Build 3 bit adder. Two groups of 3 switches, added together fit in four bits and
 
 ![1549455250299](1549455250299.png)
 
+expand plus sign of hex2bcd to see the gates inside
+
+![1552669464047](1552669464047.png)
+
+Expand plus sign of BCDto7segment to see the gates inside
+
+![1552669566497](1552669566497.png)
+
 #### Synthesis Schematic
 
-
+![1552669340447](1552669340447.png)
 
 #### Implementation Design Screen shot of something interesting
 
-![](C:\Users\SET253-22U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab2-7segDisplayofAdders\ID5.PNG)
+![](ID5.PNG)
 
-![ID51](C:\Users\SET253-22U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab2-7segDisplayofAdders\ID51.PNG)
+![ID51](ID51.PNG)
 
-![ID53](C:\Users\SET253-22U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab2-7segDisplayofAdders\ID53.PNG)
+![ID53](ID53.PNG)
 
 
 
 #### Testing
 
-
+hexA[0] =1, hexA[1]=0, hexB[0] =1, hexA[1]=0 --> number 0 on 7segment, and Carry =1, bcd[0] = 0, bcd[1] = 0, bcd[2] = 0, bcd[3] = 0 
 
 #### Prompts
 
@@ -331,11 +367,11 @@ Build 3 bit adder. Two groups of 3 switches, added together fit in four bits and
 
 *Can you think of a more efficient way to use the LUTs than what Vivado did?* **No**
 
-*How many rows would a 28 input truth table have?*
+*How many rows would a 28 input truth table have?* 
 $$
 2^{28} rows
 $$
-*How many LUTs are used in this project and how many are available in our FPGA (Look at Synthesis Utilization Report)?* 
+*How many LUTs are used in this project and how many are available in our FPGA (Look at Synthesis Utilization Report)?*  **12LUTs are used, 63400 available **
 
 *What is the largest adder truth table that could be built with all of them (# of inputs, outputs, and rows) ?*
 
@@ -343,15 +379,15 @@ $$
 
 *Since fast carry logic is so important in speeding up math, what are the chances that Xilinx is going to use fast carry logic with verilog code containing 4 bit half adders, full adders and look ahead logic?*
 
-*Vivado instead wants us to use it's Intellectual Property. Explore the IP Catalogue. What is the Xilinx IPs' name?* 
+*Vivado instead wants us to use it's Intellectual Property. Explore the IP Catalogue. What is the Xilinx IPs' name?* **Multiply Adder**
 
-*Is Vivado's math IP free?* 
+*Is Vivado's math IP free?*  **Yes**
 
 *What are the maximum number of bits the Xilinx IP can add together?* 
 
-*Why does it require a clock?*
+*Why does it require a clock?* 
 
-*Is a clocked solution faster or slower than a LUT solution?*
+*Is a clocked solution faster or slower than a LUT solution?* **slower than a LUT solution**
 
 ## excetra
 

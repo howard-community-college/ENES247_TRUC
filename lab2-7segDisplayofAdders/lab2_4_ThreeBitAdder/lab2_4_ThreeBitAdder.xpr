@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/SET253-22U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_4_ThreeBitAdder/lab2_4_ThreeBitAdder.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="dd857b6f0b5f46f29d4a56e1ab725c32"/>

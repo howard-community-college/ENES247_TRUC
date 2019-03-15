@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_2_hexToBCD/lab2_2_hexToBCD.runs/impl_1'
+HD_PWD='C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab2-7segDisplayofAdders/lab2_2_hexToBCD/lab2_2_hexToBCD.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log hex2bcd.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source hex2bcd.tcl -notrace
 
 

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Feb  7 16:48:13 2019
-| Host         : SET253-21C running 64-bit major release  (build 9200)
+| Date         : Fri Mar 15 11:48:38 2019
+| Host         : SET253-07C running 64-bit major release  (build 9200)
 | Command      : report_drc -file hex2bcd_drc_opted.rpt -pb hex2bcd_drc_opted.pb -rpx hex2bcd_drc_opted.rpx
 | Design       : hex2bcd
 | Device       : xc7a100tcsg324-1
