@@ -37,7 +37,7 @@ SW[0] is x, SW[1] is y, SW[2] is the select line and LED[0] is the output m. SW[
 
 *In the rtl schematic screen shot, what does the **or gate** do in terms of what a mux does?* **"OR gate" is the main station to decide which select to let the LED on or off, simplified the transistor level by OR gates**
 
-*How does the schematic change after running synthesis?* **appeared the LUX after running synthesis**
+*How does the schematic change after running synthesis?* **a summary of what is meant to be created in visual diagrams**
 
 *After running synthesis and implementation, clicking on synthesis under RTL, synthesis and Implementation continues to display the LUT based diagram. Not the gate based diagram. Why? Form a reasonable, non-trivial, relevant hypothesis.* **relevant hypothesis** 
 
@@ -49,7 +49,7 @@ SW[0] is x, SW[1] is y, SW[2] is the select line and LED[0] is the output m. SW[
 
 *How does Data flow in the fpga from left to right, right to left, bottom up, top down?* **left to right**
 
-*What is the verilog symbol for the white line going up at an angle in the device diagram?* **I dont understand**
+*What is the verilog symbol for the white line going up at an angle in the device diagram?* **presented by an arrow**
 
 
 
@@ -231,15 +231,15 @@ The screen shots and port diagrams above are not going to be done for you. For t
 
 *How many combinations of x,y and s are there?* **9**
 
-*Is there a reason that the #20; is intended?*
+*Is there a reason that the #20; is intended?* **Yes**
 
 *Does white space matter in verilog?* **No**
 
 **Read these articles** ... about using initial: [argument](https://forums.xilinx.com/t5/Design-Methodologies-and/quot-initial-quot-statement-with-quot-output-quot-variables/td-p/485782), [pro](http://billauer.co.il/blog/2018/02/verilog-initial-xst-quartus-vivado/), [con](https://www.quora.com/Why-are-initial-blocks-synthesizable-in-FPGA-and-not-in-ASIC), . 
 
-*Which article article supplies the most evidence?*
+*Which article article supplies the most evidence?* **The article "[Using Verilog “initial” blocks for FPGA synthesis: Legit? Portable?](http://billauer.co.il/blog/2018/02/verilog-initial-xst-quartus-vivado/)**
 
-*Which article is merely opinion?*
+*Which article is merely opinion?* **The article "**Why are initial blocks synthesizable in FPGA and not in ASIC?"**is the opinion **
 
 *Which merely says it is possible?*
 
@@ -304,7 +304,7 @@ The @* is the clearest indication of verilog evolution and the difference betwee
 
 *Why is there so much verilog code using old forms of the always command on the internet?*
 
-The always @* can not reference a clock. There is no clock in our circuit. It is combinational logic.  One can tell it is combinational logic by looking at the = sign in the begin/end code.  This means that it is executed in sequence .. at near the speed of light. 
+The always @* can not reference a clock. There is no clock in our circuit. It is combinational logic.  One can tell it is combinational logic by looking at the = sign in the begin/end code.  This means that it is executed in sequence .. at near the speed of light. **This should be the answer**
 
 *reg stands for what?* **register**
 
@@ -405,41 +405,49 @@ One of the ways we know what is going on is to predict Vivado's behavior. This c
 
 #### Testing
 
+
+
 #### Questions/Tasks
 
-*Which of the two modules above is the top level module?* ****
+*Which of the two modules above is the top level module?* **module  mux_3_to_1_instantiation () is the top level module**
 
-*What is the symbol for top level module in the vivado design sources hierarchy?*
+*What is the symbol for top level module in the vivado design sources hierarchy?* **U1 and U2**
 
-*Which of the two modules above has nets (wires) mentioned in the XDC file?*
+*Which of the two modules above has nets (wires) mentioned in the XDC file?* ****
 
-What are the lower level module instantiation names? 
+What are the lower level module instantiation names? **mux_2_to_1_gate**
 
-*What in the XDC file is the wire ul_o connected to?*
+*What in the XDC file is the wire ul_o connected to?* **wire ul_o is the connections from output of U1 connected to input of U2 **
 
-Do an experiment.  Change the .x, .y, .z and .m order in the instantiation. *Does the code still produce the same RTL schematic?*
+Do an experiment.  Change the .x, .y, .z and .m order in the instantiation. *Does the code still produce the same RTL schematic?* **No**
 
-Do another experiment. Remove .x, .y, .s and .m along with the parentheses () in the module instantiation, **but keep the original order that matches the instantiated module**.  *Does this code still produce the same RTL schematic?*
+Do another experiment. Remove .x, .y, .s and .m along with the parentheses () in the module instantiation, **but keep the original order that matches the instantiated module**.  *Does this code still produce the same RTL schematic?* ****
 
-Think about a big project. You start off writing the smaller modules and testing. Then you write larger and larger modules. The larger modules call the smaller modules. Two very different larger modules may re-use the same smaller module.  Port Interface drawings keep track of the net names, but not the order defined in the lower module. Mapping higher module net names to lower module net names means having to know what order they were originally in .. in the lower module.  *Which of the above net mapping techniques between modules makes it only necessary to map wire names, not order?*
+Think about a big project. You start off writing the smaller modules and testing. Then you write larger and larger modules. The larger modules call the smaller modules. Two very different larger modules may re-use the same smaller module.  Port Interface drawings keep track of the net names, but not the order defined in the lower module. Mapping higher module net names to lower module net names means having to know what order they were originally in .. in the lower module.  *Which of the above net mapping techniques between modules makes it only necessary to map wire names, not order?* **Port Interface drawing**
 
-*Does the RTL schematic show the two instantiated modules?* 
+*Does the RTL schematic show the two instantiated modules?* **Yes**
 
-*What does the Plus sign mean?*
+*What does the Plus sign mean?* **Plus sign contain the gates inside **
 
-How does the synthesized schematic change? 
+How does the synthesized schematic change?  ****
 
-*How many LUTs does the synthesized schematic indicate will be used?*
+*How many LUTs does the synthesized schematic indicate will be used?* **1LUT**
 
-*After implementation, does the schematic change?*
+*After implementation, does the schematic change?* **Not really**
 
 The LUT has 5 inputs and a truth table of all their possible combinations.  *Where is this truth table in the Vivado interface (hint: netlist)?*
 
+**click on the LUT5 blue on the implemented device and then go to Netlist tab, choose U2 / leafCells/click on m(LUT5). After that on the Cell Properties, choose the Truth table.**
+
 *Take a screenshot of the truth table and put it here.*
+
+![1553195357626](1553195357626.png)
 
 *Find where I4, I3, .. I0 are mapped to the top level input nets. Put the screen shot here.*
 
-*Is there any order to the mapping?*
+![1553198965425](1553198965425.png)
+
+*Is there any order to the mapping?* **No, because it depend on the order of input**
 
 
 
@@ -451,17 +459,17 @@ These ethics questions are related to the community of engineers working for ind
 
 *Describe the success of the verilog standard.*
 
-*Do you think the IEEE, the largest, international, engineering standards organization, lays down law that Engineers world wide have to follow?* 
+*Do you think the IEEE, the largest, international, engineering standards organization, lays down law that Engineers world wide have to follow?*  **Yes, maybe**
 
-*Are engineers involved with precise, universally known best practice that hasn't changed for over 100 years or are technicians?* 
+*Are engineers involved with precise, universally known best practice that hasn't changed for over 100 years or are technicians?*  **Yes**
 
-*Why are there all these different ways of implementing a mux in verilog when vivado turns them all into the same thing .. a LUT?* 
+*Why are there all these different ways of implementing a mux in verilog when vivado turns them all into the same thing .. a LUT?* **This has the answer contain in the question**
 
-*If there is one good, true way of implementing a mux in verilog, why not just teach/learn that?*
+*If there is one good, true way of implementing a mux in verilog, why not just teach/learn that?* **Because everything need to improve, we should not use the same method over and over again**
 
-*Given the chaos of the verilog standard, does this excite you as an engineer with visions of an opportunity?  Does it give you visions of a job reducing the chaos, unexplored cracks where there are possible significant improvements in productivity, possible unknown territory that the standard hasn't addressed? Or does it depress you?*
+*Given the chaos of the verilog standard, does this excite you as an engineer with visions of an opportunity? **Yes** Does it give you visions of a job reducing the chaos, unexplored cracks where there are possible significant improvements in productivity, possible unknown territory that the standard hasn't addressed? **Yes somehow** Or does it depress you?* **No** 
 
-*What does chaos feel like?*
+*What does chaos feel like?* **The chaos feel like push me to discovery and figure out the problem of the project as soon as possible, sometime I feel like I dream about my project because I havent done it**
 
 *Describe the tremendous advantages a fresh young mind has when confronted with chaos.* 
 
@@ -469,8 +477,8 @@ These ethics questions are related to the community of engineers working for ind
 
 *Given that Fortran hasn't changed since the 1960's, C hasn't changed since the 1970's. Java and C++ haven't changed for [decades](https://www.tiobe.com/tiobe-index/), do these languages excite you as an engineer or depress you? **Yes**
 
-Almost all software today has verilog code generators including matlab, python, Lab View. A lot of this code will pass Simulation on [EDAplayground](https://www.edaplayground.com/) or will only work with specific hardware.  *What are the chances that generated code will work in Vivado?*  ****
+Almost all software today has verilog code generators including matlab, python, Lab View. A lot of this code will pass Simulation on [EDAplayground](https://www.edaplayground.com/) or will only work with specific hardware.  *What are the chances that generated code will work in Vivado?*  **VHDL code**
 
-*How universal is the digital design process, how universal are the design documents and the symbols they contain that are entered into and looked at in matlab, python and LabView?* **They looked at **
+*How universal is the digital design process, how universal are the design documents and the symbols they contain that are entered into and looked at in matlab, python and LabView?* **They looked at the simple code to make the incredible design **
 
 *What is the market share of [Xilinx](https://www.fool.com/investing/2018/04/17/xilinxs-project-everest-looks-like-bad-news-for-in.aspx)?* **FPGA market**
