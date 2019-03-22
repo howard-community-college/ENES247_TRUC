@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_2/lab5_2_2_circuit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab5_2_2_circuit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_2/lab5_2_2_circuit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab5_2_2_circuit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_2/Lab_5_2_2_Circuit/Lab_5_2_2_Circuit.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

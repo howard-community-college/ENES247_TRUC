@@ -39,11 +39,11 @@ SW[0] is x, SW[1] is y, SW[2] is the select line and LED[0] is the output m. SW[
 
 *How does the schematic change after running synthesis?* **a summary of what is meant to be created in visual diagrams**
 
-*After running synthesis and implementation, clicking on synthesis under RTL, synthesis and Implementation continues to display the LUT based diagram. Not the gate based diagram. Why? Form a reasonable, non-trivial, relevant hypothesis.* **relevant hypothesis** 
+*After running synthesis and implementation, clicking on synthesis under RTL, synthesis and Implementation continues to display the LUT based diagram. Not the gate based diagram. Why? Form a reasonable, non-trivial, relevant hypothesis.* **relevant hypothesis. The LUT (Look Up Table) is the circuit working based on the input and output of the table  ** 
 
  *The black and white design window appears first after running which step of the workflow?* **black and white design window appears first after running Implementation**
 
-*How what can you click on to see a region of the device window change from some color to white?* **click on the color, it automatic change to white**
+*How what can you click on to see a region of the device window change from some color to white?* **click on the color, it automatic change to white. During the implementation**
 
 *White arrows in the screen shot above are helping us see what?* **to help us to see input, select line and output**
 

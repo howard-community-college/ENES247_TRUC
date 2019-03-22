@@ -13,6 +13,6 @@ module D_ff_behavior(
         if(Clk)
         begin
            Q <= D;
-       end
+        end
 
 endmodule

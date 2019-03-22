@@ -121,17 +121,21 @@ red place is the latch state
 
 #### RTL Schematic Screen shot
 
-  
+  ![1553274538775](1553274538775.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-
+![1553274628793](1553274628793.png)
 
 #### Testing
 
-
+Clk = 1, D=1 --> Q=0 until turn off Clk and turn on again then Q=1
 
 #### Prompt 
+
+test bench
+
+![1553274306061](1553274306061.png)
 
 
 
@@ -139,17 +143,31 @@ red place is the latch state
 
 #### RTL Schematic Screen shot
 
-
+![1553279814440](1553279814440.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1553278532085](1553278532085.png)
 
+![1553278674976](1553278674976.png)
+
+![1553278563725](1553278563725.png)
+
+![1553278615055](1553278615055.png)
+
+![1553278790532](1553278790532.png)
 
 #### Testing
 
 
 
 #### Prompt 
+
+Timing diagram
+
+![1553278967216](1553278967216.png)
+
+
 
 
 
@@ -157,17 +175,21 @@ red place is the latch state
 
 #### RTL Schematic Screen shot
 
-
+![1553281843952](1553281843952.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
-
+![1553281889094](1553281889094.png)
 
 #### Testing
 
 
 
 #### Prompt 
+
+Timing diagram 
+
+![1553281810542](1553281810542.png)
 
 
 

@@ -1,0 +1,7 @@
+Running: xsim.dir/D_ff_sync_reset_behavior_tb_behav/xsimk.exe -simmode gui -wdb D_ff_sync_reset_behavior_tb_behav.wdb -simrunnum 0 -socket 59604
+Design successfully loaded
+Design Loading Memory Usage: 5572 KB (Peak: 5572 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 6168 KB (Peak: 6168 KB)
+Simulation CPU Usage: 31 ms
