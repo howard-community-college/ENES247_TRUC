@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_3/Lab5_2_3_D_Flipflop_sync_reset_behavior/Lab5_2_3_D_Flipflop_sync_reset_behavior.runs/synth_1'
+HD_PWD='C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_3/Lab5_2_3_D_Flipflop_sync_reset_behavior/Lab5_2_3_D_Flipflop_sync_reset_behavior.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

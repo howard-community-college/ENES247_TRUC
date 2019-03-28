@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 28 15:34:16 2019
+# Process ID: 4048
+# Current directory: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_5/lab5_2_5_T_ff_enable_behavior/lab5_2_5_T_ff_enable_behavior.runs/impl_1
+# Command line: vivado.exe -log T_ff_enable_behavior.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source T_ff_enable_behavior.tcl -notrace
+# Log file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_5/lab5_2_5_T_ff_enable_behavior/lab5_2_5_T_ff_enable_behavior.runs/impl_1/T_ff_enable_behavior.vdi
+# Journal file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_5/lab5_2_5_T_ff_enable_behavior/lab5_2_5_T_ff_enable_behavior.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source T_ff_enable_behavior.tcl -notrace

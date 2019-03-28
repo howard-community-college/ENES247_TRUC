@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 28 14:48:31 2019
+# Process ID: 11884
+# Current directory: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_4/lab5_2_4_DffWithCeSynResetBehavior/lab5_2_4_DffWithCeSynResetBehavior.runs/impl_1
+# Command line: vivado.exe -log D_ff_with_ce_and_synch_reset_behavior.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source D_ff_with_ce_and_synch_reset_behavior.tcl -notrace
+# Log file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_4/lab5_2_4_DffWithCeSynResetBehavior/lab5_2_4_DffWithCeSynResetBehavior.runs/impl_1/D_ff_with_ce_and_synch_reset_behavior.vdi
+# Journal file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_4/lab5_2_4_DffWithCeSynResetBehavior/lab5_2_4_DffWithCeSynResetBehavior.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source D_ff_with_ce_and_synch_reset_behavior.tcl -notrace

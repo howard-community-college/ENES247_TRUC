@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_5/T_ff_enable_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module T_ff_enable_behavior
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_2_5/lab5_2_5_T_ff_enable_behavior/lab5_2_5_T_ff_enable_behavior.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

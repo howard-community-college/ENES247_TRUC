@@ -183,7 +183,7 @@ Timing diagram
 
 #### Testing
 
-
+in notebook
 
 #### Prompt 
 
@@ -191,23 +191,33 @@ Timing diagram
 
 ![1553281810542](1553281810542.png)
 
-
+D flip flop when D on, the next state Q stay on. when D off, the next state Q stay off.
 
 ## 5_2_4_D_Flipflop_with_ce_and_sync_reset_behavior
 
 #### RTL Schematic Screen shot
 
-
+![1553799444638](1553799444638.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+2 input (SR, D)
 
+1 output (Q)
+
+![1553799276850](1553799276850.png)
 
 #### Testing
 
-
+When D on, CE on, clk on --> output D is on, after that off everything --> output D still remain on. When reset on, clk on ---> output D is off.
 
 #### Prompt 
+
+Timing diagram 
+
+![1553800103219](1553800103219.png)
+
+
 
 
 
@@ -215,14 +225,26 @@ Timing diagram
 
 #### RTL Schematic Screen shot
 
-
+![1553802190832](1553802190832.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1553801882829](1553801882829.png)
 
+a LUT5 connected to the Dff
 
-#### Testing
+![1553801949618](1553801949618.png)
+
+![1553801993216](1553801993216.png)
+
+![1553802027720](1553802027720.png)
+
+#### Testing:
+
+doing in notebook
 
 
 
 #### Prompt 
+
+A LUT 5 connected to D flip flop with CE and reset behavior. Discuss more in notebook.
