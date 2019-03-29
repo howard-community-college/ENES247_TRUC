@@ -28,7 +28,7 @@ module Register_with_synch_reset_load_behavior_tb(
       #20 D = 4'b0101;
       #40 load = 1;
       #20 load = 0;
-      D = 4'b1001;
+      #60 D = 4'b1001;
       #40 load = 1;
       #20 load = 0;  
       #15 reset = 1;

@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 29 13:59:27 2019
+# Process ID: 8784
+# Current directory: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_1/lab6_1_1RegWSynch_reset_load_behavior
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7684 C:\Users\SET253-07U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab6-ShiftRegisters\lab6_1_1\lab6_1_1RegWSynch_reset_load_behavior\lab6_1_1RegWSynch_reset_load_behavior.xpr
+# Log file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_1/lab6_1_1RegWSynch_reset_load_behavior/vivado.log
+# Journal file: C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_1/lab6_1_1RegWSynch_reset_load_behavior\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_1/lab6_1_1RegWSynch_reset_load_behavior/lab6_1_1RegWSynch_reset_load_behavior.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+update_files -from_files C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_1/Register_with_synch_reset_load_behavior_tb.v -to_files C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_1/Register_with_synch_reset_load_behavior_tb.v -filesets [get_filesets *]
+export_ip_user_files -of_objects  [get_files C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_1/Register_with_synch_reset_load_behavior_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_1/Register_with_synch_reset_load_behavior_tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/SET253-07U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_1/Register_with_synch_reset_load_behavior_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
