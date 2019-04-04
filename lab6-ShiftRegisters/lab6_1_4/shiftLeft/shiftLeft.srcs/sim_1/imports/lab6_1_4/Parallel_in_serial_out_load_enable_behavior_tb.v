@@ -25,7 +25,7 @@ module Parallel_in_serial_out_load_enable_behavior_tb(
     
     initial
     begin
-      ParallelIn = 0; ShiftEn= 0; ShiftIn = 1; load = 0;
+      ParallelIn = 4'b0000; ShiftEn= 0; ShiftIn = 1; load = 0;
       #20 ParallelIn = 4'b0101;
       #40 load = 1;
       #20 load = 0;

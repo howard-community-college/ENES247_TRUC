@@ -26,9 +26,13 @@ The major take away from this lab is able to model various types of registers an
 
 #### Testing
 
+When input D is 0110, load on, clk on/off then the output Q is 0110
 
+When reset on, clk on/off then the output Q is 0000
 
 #### Prompt 
+
+written in notebook page 153
 
 
 
@@ -36,17 +40,29 @@ The major take away from this lab is able to model various types of registers an
 
 #### RTL Schematic Screen shot
 
+![1554405023958](1554405023958.png)
+
 
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+Four A5LUT connected to D flip flop, The A5LUT of Q[1] is inside the A5LUT of Q[0]
 
+![1554405085861](1554405085861.png)
+
+![1554405156262](1554405156262.png)
 
 #### Testing
 
+When set on, turn clk on/off, the output Q is 1111
 
+When reset on, turn clk on/off, the ouput Q is 0000
+
+When input D is 0101, load on, turn clk on/off the output Q is 0101
 
 #### Prompt 
+
+written in the notebook page 155
 
 
 
@@ -54,17 +70,35 @@ The major take away from this lab is able to model various types of registers an
 
 #### RTL Schematic Screen shot
 
-
+![1554407943104](1554407943104.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1554407241111](1554407241111.png)
 
+![1554407302554](1554407302554.png)
+
+![1554407338296](1554407338296.png)
+
+![1554407369534](1554407369534.png)
+
+AFF MUX
+
+![1554407809649](1554407809649.png)
 
 #### Testing
 
+ShiftIn on, Clk on/off/on/off/on (Means delay 3 blocks) , the output ShiftOut on
 
+Turn ShiftIn off, Clk off, the output ShiftOut still on
+
+Turn Clk on/off/on/off/on (Means delay 3 blocks) ,  the ouput ShiftOut off
 
 #### Prompt 
+
+written on notebook page 81 (notebook_2)
+
+
 
 
 
@@ -72,17 +106,23 @@ The major take away from this lab is able to model various types of registers an
 
 #### RTL Schematic Screen shot
 
-
+![1554410083538](1554410083538.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1554409678111](1554409678111.png)
 
+![1554409726701](1554409726701.png)
 
 #### Testing
 
+Base on timing diagram. successful to testing shift left
 
+![1554411569007](1554411569007.png)
 
 #### Prompt 
+
+written notebook on page 83
 
 
 
