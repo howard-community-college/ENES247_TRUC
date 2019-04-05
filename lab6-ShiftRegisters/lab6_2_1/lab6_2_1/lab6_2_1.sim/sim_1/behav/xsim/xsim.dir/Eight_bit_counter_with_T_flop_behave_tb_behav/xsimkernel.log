@@ -1,0 +1,7 @@
+Running: xsim.dir/Eight_bit_counter_with_T_flop_behave_tb_behav/xsimk.exe -simmode gui -wdb Eight_bit_counter_with_T_flop_behave_tb_behav.wdb -simrunnum 0 -socket 63670
+Design successfully loaded
+Design Loading Memory Usage: 5584 KB (Peak: 5584 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6224 KB (Peak: 6224 KB)
+Simulation CPU Usage: 31 ms

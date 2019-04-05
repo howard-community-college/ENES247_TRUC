@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_5/Serial_in_parallel_out_enable_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serial_in_parallel_out_enable_behavior
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_1_5/Serial_in_parallel_out_enable_behavior_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Serial_in_parallel_out_enable_behavior_tb

@@ -130,17 +130,27 @@ written notebook on page 83
 
 #### RTL Schematic Screen shot
 
-
+![1554484629959](1554484629959.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1554487397374](1554487397374.png)
 
+![1554487352766](1554487352766.png)
+
+![1554487420182](1554487420182.png)
+
+![1554487498895](1554487498895.png)
 
 #### Testing
 
+Base on the timing diagram, testing on the device. getting successful
 
+![1554487239274](1554487239274.png)
 
 #### Prompt 
+
+written on notebook page 85
 
 
 
@@ -148,17 +158,35 @@ written notebook on page 83
 
 #### RTL Schematic Screen shot
 
-
+![1554492011259](1554492011259.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1554490956245](1554490956245.png)
 
+![1554490977572](1554490977572.png)
+
+![1554490703641](1554490703641.png)
+
+![1554490727857](1554490727857.png)
+
+![1554490785422](1554490785422.png)
+
+![1554490832406](1554490832406.png)
+
+*** 8 LUT connected to D ff
 
 #### Testing
 
+Turn clear_n on, enable on, turn clk on/off --> out put start counting at 0000 0001, 0000 00010, 0000 0011 and so on.
 
+Timing diagram:
+
+![1554491960678](1554491960678.png)
 
 #### Prompt 
+
+written on notebook page 85-89
 
 
 
