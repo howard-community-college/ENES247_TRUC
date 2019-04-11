@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_2_3/Four_bit_down_counter_with_load_enable_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Four_bit_down_counter_with_load_enable_behavior
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_2_3/Four_bit_down_counter_with_load_enable_behavior_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Four_bit_down_counter_with_load_enable_behavior_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab6-ShiftRegisters/lab6_2_3/lab6_2_3/lab6_2_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

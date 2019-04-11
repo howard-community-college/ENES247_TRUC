@@ -194,19 +194,43 @@ written on notebook page 85-89
 
 #### RTL Schematic Screen shot
 
-
+![1555008651060](1555008651060.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1555009486781](1555009486781.png)
 
+![1555009255564](1555009255564.png)
+
+![1555009306805](1555009306805.png)
+
+![1555009371738](1555009371738.png)
+
+![1555009448911](1555009448911.png)
 
 #### Testing
 
+Instantiation off
 
+When Clear_n = 1, Enable = 0, clock on/off ->> D output 0000 0000 
+
+When Clear_n = 1, Enable = 1, clock on/off ->> D output 0000 0001.
+
+Continuous to turn clock on/off ->> D output 0000 0010
+
+... keep turn on the clock on/off -->> D output count until 1111 1111
+
+When Clear_n = 1, Enable = 0, clock on/off ->> D output keep the same with previous state
+
+When Clear_n = 0, Enable = 0, clock on/off ->> D output go back to off (0000 0000)
 
 #### Prompt 
 
+written on notebook page 89
 
+![1555010638298](1555010638298.png)
+
+The first module with the triangle in front is the top level
 
 
 
@@ -214,11 +238,25 @@ written on notebook page 85-89
 
 #### RTL Schematic Screen shot
 
-
+![1555013834480](1555013834480.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1555012109914](1555012109914.png)
 
+![1555012146219](1555012146219.png)
+
+![1555012201893](1555012201893.png)
+
+![1555012291232](1555012291232.png)
+
+![1555012244453](1555012244453.png)
+
+![1555012345594](1555012345594.png)
+
+![1555012578554](1555012578554.png)
+
+![1555012623316](1555012623316.png)
 
 #### Testing
 
@@ -226,3 +264,6 @@ written on notebook page 85-89
 
 #### Prompt 
 
+Timing diagram 
+
+![1555013970447](1555013970447.png)
