@@ -260,10 +260,10 @@ The first module with the triangle in front is the top level
 
 #### Testing
 
+The same on Timing diagram 
 
+![1555013970447](1555013970447.png)
 
 #### Prompt 
 
-Timing diagram 
-
-![1555013970447](1555013970447.png)
+written on notebook.
