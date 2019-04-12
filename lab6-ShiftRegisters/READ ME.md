@@ -8,7 +8,11 @@ The major take away from this lab is able to model various types of registers an
 
 
 
-## 6_1_1Register_with_synch_reset_load_behavior
+## 6_1_1 4 bit register with synchronous reset
+
+#### Verilog code
+
+![1554409037045](1554409037045.png)
 
 #### RTL Schematic Screen shot
 
@@ -32,11 +36,19 @@ When reset on, clk on/off then the output Q is 0000
 
 #### Prompt 
 
-written in notebook page 153
+D flip flops differ in the bottom label. This one says RTL_REG_SYNC
+
+*Why is the load line connected to CE and the reset line connected to RST? Just because of the order in the if command?* **Yes**
+
+written more in notebook page 153
 
 
 
 ## 6_1_2Register_with_synch_set_reset_load_behavior
+
+#### Verilog code
+
+![1555086135435](1555086135435.png)
 
 #### RTL Schematic Screen shot
 
@@ -62,11 +74,17 @@ When input D is 0101, load on, turn clk on/off the output Q is 0101
 
 #### Prompt 
 
-written in the notebook page 155
+*So there are three ways to control the register: RST, SET and load.*
+
+*And they have to be in the nest order of those if commands. This is strange .. but it makes it easier to remember. First Reset, then Set, then Load.*
+
+*What does Load do?* **Load does the CE job** 
+
+*What is CE?* **Clock Enable**
 
 
 
-## 6_1_3Delay_line3_behavior
+## 6_1_3Delay_line3_behavior(One bit Delay)
 
 #### RTL Schematic Screen shot
 
@@ -96,6 +114,10 @@ Turn Clk on/off/on/off/on (Means delay 3 blocks) ,  the ouput ShiftOut off
 
 #### Prompt 
 
+*The { } command above is where the shift occurs. Why not use >> or << ? Does it still work?* **It normally shifts in 0's. To shift in ones, have to not, then shift, then not back. Also << shifts in more than one bit which would either be multiple 0's or multiple 1's, not a mixture. It's use is limited.**
+
+Why is this named RTL_REG rather than RTL_REG_SYNC like the ones above? **RTL_REG doesn't include the synchronous reset in a counter, so it might rather than RTL_REG_SYNC **
+
 written on notebook page 81 (notebook_2)
 
 
@@ -103,6 +125,10 @@ written on notebook page 81 (notebook_2)
 
 
 ## 6_1_4Parallel_in_serial_out_load_enable_behavior
+
+#### Verilog Code
+
+![1555086670561](1555086670561.png)
 
 #### RTL Schematic Screen shot
 
@@ -121,6 +147,12 @@ Base on timing diagram. successful to testing shift left
 ![1554411569007](1554411569007.png)
 
 #### Prompt 
+
+Again, we see RTL_REG.  *What is the difference between RTL_REG and RTL_REG_SYNC?*
+
+**The difference between RTL_REG and RTL_REG_SYNC is RTL_REG is the Register Transfer Level with just only Register but RTL_REG_SYNC is the Register Transfer Level with the Synchronous   **
+
+*Are we going to see a RTL_ASYNC?* **Yes maybe, that is the Register Transfer Level with ansynchronous**
 
 written notebook on page 83
 
