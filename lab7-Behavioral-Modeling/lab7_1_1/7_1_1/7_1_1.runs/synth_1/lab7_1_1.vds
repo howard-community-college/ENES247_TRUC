@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 12 14:54:33 2019
+# Process ID: 1312
+# Current directory: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab7-Behavioral-Modeling/lab7_1_1/7_1_1/7_1_1.runs/synth_1
+# Command line: vivado.exe -log lab7_1_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab7_1_1.tcl
+# Log file: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab7-Behavioral-Modeling/lab7_1_1/7_1_1/7_1_1.runs/synth_1/lab7_1_1.vds
+# Journal file: C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab7-Behavioral-Modeling/lab7_1_1/7_1_1/7_1_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab7_1_1.tcl -notrace
+Command: synth_design -top lab7_1_1 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8236 
+ERROR: [Synth 8-1873] declarations not allowed in unnamed block [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab7-Behavioral-Modeling/lab7_1_1/lab7_1_1.v:12]
+INFO: [Synth 8-2350] module lab7_1_1 ignored due to previous errors [C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab7-Behavioral-Modeling/lab7_1_1/lab7_1_1.v:6]
+Failed to read verilog 'C:/Users/SET253-08U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab7-Behavioral-Modeling/lab7_1_1/lab7_1_1.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 12 14:54:41 2019...
