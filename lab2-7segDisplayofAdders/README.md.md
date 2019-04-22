@@ -38,7 +38,7 @@ This lab is about turning off and on the individual red LED segments of the disp
 
 *How is this project different from just hooking all the switches up to all the LEDs?**This can use the switch to all the LEDs and the 7 segment display too**
 
-*This project does something different from an output point of view than just selecting an LED. What output does something different? **nothing**
+*This project does something different from an output point of view than just selecting an LED. What output does something different? **AN gets rid of the digit displays.**
 
 *Can the decimal place (DP) be moved to a different display than the display the number is appearing on?* **Yes**
 
