@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 14 13:59:27 2019
+# Process ID: 10464
+# Current directory: C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/lab5_1_2_SR_gated_latch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6356 C:\Users\SET253-05U.HCCMAIN\Documents\GitHub\ENES247_TRUC\lab5-Latches_FlipFlops\lab5_1_2\lab5_1_2_SR_gated_latch\lab5_1_2_SR_gated_latch.xpr
+# Log file: C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/lab5_1_2_SR_gated_latch/vivado.log
+# Journal file: C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/lab5_1_2_SR_gated_latch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/lab5_1_2_SR_gated_latch/lab5_1_2_SR_gated_latch.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/lab5_1_2_SR_gated_latch/lab5_1_2_SR_gated_latch.runs/impl_1/SR_gated_latch_dataflow.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/SET253-05U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab5-Latches_FlipFlops/lab5_1_2/lab5_1_2_SR_gated_latch/lab5_1_2_SR_gated_latch.runs/impl_1/SR_gated_latch_dataflow.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+synth_design -rtl -name rtl_1
+current_design impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_simulation
+source SR_gated_latch_dataflow_tb.tcl
+launch_simulation -mode post-synthesis -type timing
+source SR_gated_latch_dataflow_tb.tcl
+reset_run impl_1 -prev_step 
+close_sim
+close_sim

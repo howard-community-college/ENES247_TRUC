@@ -9,7 +9,6 @@ module gray_code_case(
 	output reg invalid,
 	output reg [3:0] gray_code
     );
-    
        always @ (bcd or enable)
        begin
         if(enable)
@@ -38,5 +37,4 @@ module gray_code_case(
             gray_code = 4'b1111;
 		end		
        end 
-
 endmodule
