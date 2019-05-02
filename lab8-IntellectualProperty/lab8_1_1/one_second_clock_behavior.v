@@ -14,7 +14,7 @@ module one_second_clock_behavior(
        wire Q;
 
        // clock generator instantiation
-        clk_wiz_1 instance_name
+        clk_wiz_0 instance_name
         (
         // Clock in ports
          .clk_in1(Clk),      // input clk_in1
