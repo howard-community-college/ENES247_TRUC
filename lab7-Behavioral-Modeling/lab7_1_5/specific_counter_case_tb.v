@@ -16,8 +16,8 @@ module specific_counter_case_tb(
         clk = 0;
         forever
         begin
-          #5 clk = 1;
-          #5 clk = 0;
+          #10 clk = 1;
+          #10 clk = 0;
         end
     end
 

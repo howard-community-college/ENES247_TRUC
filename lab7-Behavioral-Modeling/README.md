@@ -104,9 +104,11 @@ look like following the truth table. Just a LUT
 
 #### Testing
 
-
+successful to testing on the NEXYS 4 DDR. 
 
 #### Prompt
+
+Written on notebook (page 97-99)
 
 
 
@@ -114,18 +116,40 @@ look like following the truth table. Just a LUT
 
 #### Verilog code
 
-
+![1556821301571](1556821301571.png)
 
 #### RTL Schematic Screen Shot
 
-
+![1556821339605](1556821339605.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1556821753116](1556821753116.png)
 
+![1556821788168](1556821788168.png)
+
+2 SR flipflop
+
+![1556821836316](1556821836316.png)
+
+![1556821962734](1556821962734.png)
+
+2 LUT
+
+![1556821986905](1556821986905.png)
+
+4 flip flops
+
+![1556822042240](1556822042240.png)
 
 #### Testing
 
+successful to test on the device look like the diagram
 
+timing diagram
+
+![1556822416333](1556822416333.png)
 
 #### Prompt
+
+written on the notebook (page 99-101)

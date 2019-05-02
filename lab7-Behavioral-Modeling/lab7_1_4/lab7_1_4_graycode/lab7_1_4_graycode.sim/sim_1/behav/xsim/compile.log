@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-12U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab7-Behavioral-Modeling/lab7_1_4/gray_code_case.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gray_code_case
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-12U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab7-Behavioral-Modeling/lab7_1_4/lab7_1_4_graycode/lab7_1_4_graycode.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

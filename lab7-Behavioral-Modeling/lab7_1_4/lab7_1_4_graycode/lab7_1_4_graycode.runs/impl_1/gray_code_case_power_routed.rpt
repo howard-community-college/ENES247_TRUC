@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Fri Apr 26 13:21:50 2019
+| Date             : Thu May  2 13:58:12 2019
 | Host             : SET253-12C running 64-bit major release  (build 9200)
 | Command          : report_power -file gray_code_case_power_routed.rpt -pb gray_code_case_power_summary_routed.pb -rpx gray_code_case_power_routed.rpx
 | Design           : gray_code_case
