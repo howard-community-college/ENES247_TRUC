@@ -76,6 +76,8 @@ when turn the enable on, it bouncing (around 4194304 = 2^22 Hz )
 
 #### Prompt
 
+written on notebook (page 103-105)
+
 
 
 ## 8-1-2 Display the 4-bit_binary_converted_to_BCD_on_two 7-segment_displays
@@ -90,15 +92,55 @@ when turn the enable on, it bouncing (around 4194304 = 2^22 Hz )
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1556902266108](1556902266108.png)
 
+* The first blue point on the left 
+
+  ![1556902389907](1556902389907.png)
+
+* The small blue point on the top right
+
+  ![1556902499725](1556902499725.png)
+
+* The first blue point on the right
+
+  ![1556902533301](1556902533301.png)
+
+  ![1556902579911](1556902579911.png)
+
+  ![1556902617984](1556902617984.png)
+
+* The second blue point on the right 
+
+  ![1556902665224](1556902665224.png)
+
+  ![1556902700921](1556902700921.png)
+
+  ![1556902733457](1556902733457.png)
+
+* The third blue point on the right 
+
+  ![1556902773234](1556902773234.png)
+
+  ![1556902991627](1556902991627.png)
+
+  ![1556903024602](1556903024602.png)
+
+* The first blue point on the bottom left
+
+  ![1556904132046](1556904132046.png)
+
+* The second blue point on the bottom right
+
+  ![1556905944080](1556905944080.png)
 
 #### Testing
 
-
+success to build the code on the Nexys 4 DDR
 
 #### Prompt
 
-
+written on notebook (page 107)
 
 
 
@@ -121,8 +163,3 @@ when turn the enable on, it bouncing (around 4194304 = 2^22 Hz )
 
 
 #### Prompt
-
-
-
-
-
