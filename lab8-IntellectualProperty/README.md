@@ -84,11 +84,55 @@ written on notebook (page 103-105)
 
 #### Verilog code
 
+* Top level module:
 
+  ![1556906926638](1556906926638.png)
+
+* Bottom level module
+
+  * lab2_2_1_partA.v
+
+  ![1556906961868](1556906961868.png)
+
+  + + comparator_dataflow.v
+
+  ![1556907092396](1556907092396.png)
+
+  * + lab2_circuitA_dataflow.v
+
+    ![1556907113365](1556907113365.png)
+
+  * + mux_2_to_1_behavior.v
+
+    ![1556907141918](1556907141918.png)
+
+  * clk_divider_about_500hz_refesh_rate_2display
+
+    ![1556907432018](1556907432018.png)
+
+  * two_bcd_2_7segment_display
+
+    ![1556907500361](1556907500361.png)
+
+  * + bcdto7segment_dataflow
+
+      ![1556907595722](1556907595722.png)
 
 #### RTL Schematic Screen Shot
 
+![1556906324459](1556906324459.png)
 
+![1556906375861](1556906375861.png)
+
+![1556906439673](1556906439673.png)
+
+![1556906494166](1556906494166.png)
+
+![1556906539281](1556906539281.png)
+
+![1556906616699](1556906616699.png)
+
+![1556906654436](1556906654436.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 

@@ -15,7 +15,7 @@ module binary2bcd_on_2_7segment(
 	        
 	wire [3:0] m;
 	wire z, Clk;
-	//wire [7:0] an;
+	//wire [7:0] an; <<< do not need this
 	
 	lab2_2_1_partA U1 (.v(v), .z(z), .m_out(m));
 	clk_divider_about_500hz_refresh_rate_2display U2(.Clk(Clk), .reset(reset), .an(an));

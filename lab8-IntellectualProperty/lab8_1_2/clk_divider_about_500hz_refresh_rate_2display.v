@@ -11,17 +11,13 @@ module clk_divider_about_500hz_refresh_rate_2display(
     input reset,
     output reg [3:0] an
     );
-    
     reg [13:0] count;
-
     always @(posedge Clk or posedge reset)
-    if (reset) 
-    begin
+    if (reset) begin
        an <= 8'b1111;
        count <= 0;
     end 
-    else 
-    begin
+    else begin
        count <= count + 1;
        case (count[13:12])
          2'b00 : an <= 8'b1110;
@@ -32,5 +28,4 @@ module clk_divider_about_500hz_refresh_rate_2display(
                   end
        endcase 
      end
-
 endmodule
