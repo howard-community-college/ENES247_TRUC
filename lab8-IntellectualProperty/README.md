@@ -194,16 +194,78 @@ written on notebook (page 107)
 
 #### Verilog code
 
+* Top level module: two_digits_counter_on_2_7segment_display![1557427453831](1557427453831.png)
+
+* Bottom level module:
+
+  * clk_5MHz using Architectural Wizard
+
+    ![1557428422678](1557428422678.png)
+
+  * clk_divider_1hz_behavior module
+
+    ![1557427646761](1557427646761.png)
+
+  * four_bit_counter_fabric (Binary counter)
+
+    ![1557427720268](1557427720268.png)
+
+    ![1557427743430](1557427743430.png)
+
+  * clk_divider_about_500hz_refresh_rate_2display module
+
+    ![1557427671082](1557427671082.png)
+
+  * two_bcd_2_7segment_display
+
+    ![1557427775958](1557427775958.png)
+
+    * bcdto7segment_dataflow module
+
+    ​	![1557427799493](1557427799493.png)
+
 #### RTL Schematic Screen Shot
 
+![1557427896564](1557427896564.png)
 
+![1557427918452](1557427918452.png)
+
+![1557427943986](1557427943986.png)
+
+![1557428014208](1557428014208.png)
+
+![1557428063342](1557428063342.png)
+
+![1557428099779](1557428099779.png)
+
+![1557428129351](1557428129351.png)
+
+![1557428162241](1557428162241.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1557426711455](1557426711455.png)
 
+#a bunch of blue dots on the right side
+
+![1557426746393](1557426746393.png)
+
+![1557427008865](1557427008865.png)
+
+![1557427100271](1557427100271.png)
+
+![1557427130378](1557427130378.png)
+
+![1557427294109](1557427294109.png)
+
+#a blue dot on the left side
+
+![1557426880016](1557426880016.png)
 
 #### Testing
 
-
+turn enable on, 7segment counts from 0 to 99. Then reset.
 
 #### Prompt
+
+Written on notebook(page 107-109)

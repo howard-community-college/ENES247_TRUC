@@ -11,13 +11,12 @@ module clk_divider_1hz_behavior(
     input enable,
     output reg Q
     );
-    
        parameter TERMINAL_COUNT = 23'h2625A0;
        reg [22:0] count;
-       wire count_done;;
-
+       wire count_done;
+       
        assign count_done = (count == TERMINAL_COUNT);
-
+       
        always @(posedge Clk)
        if (reset) 
        begin
@@ -33,5 +32,4 @@ module clk_divider_1hz_behavior(
        end
        else
           count <= count;
-
 endmodule
