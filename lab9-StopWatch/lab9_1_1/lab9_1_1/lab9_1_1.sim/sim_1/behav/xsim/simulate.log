@@ -1,0 +1,13 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+a=4, b=a, cin=0, expected s=e, count=0, got s=e, count=0, at time=               30000
+a=5, b=9, cin=0, expected s=e, count=0, got s=e, count=0, at time=               60000
+a=7, b=7, cin=0, expected s=e, count=0, got s=e, count=0, at time=               90000
+a=a, b=4, cin=0, expected s=e, count=0, got s=e, count=0, at time=              120000
+a=e, b=0, cin=0, expected s=e, count=0, got s=e, count=0, at time=              150000
+a=8, b=3, cin=1, expected s=c, count=0, got s=c, count=0, at time=              180000
+a=6, b=5, cin=1, expected s=c, count=0, got s=c, count=0, at time=              210000
+a=3, b=8, cin=1, expected s=c, count=0, got s=c, count=0, at time=              240000
+a=f, b=c, cin=1, expected s=c, count=1, got s=c, count=1, at time=              270000
+Simulation Done
+Test Passed

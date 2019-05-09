@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../cla_gate.v" \
+"../../../../../claadder_gate.v" \
+"../../../../../fulladder_with_pg_gate.v" \
+"../../../../../claadder_gate_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
