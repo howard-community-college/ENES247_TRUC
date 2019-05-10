@@ -36,11 +36,11 @@ ___
 
 #### Prompts
 
-*Does it look like the primitives can be accessed in Verilog?*  **Yes**
+*Does it look like the primitives can be accessed in Verilog?*  **Yes, there is a connection between given verilog primitives and diagram**
 
-*Can you see a direct relationship between the primitive used and the primitive referenced in the Verilog code?*  **Yes**
+*Can you see a direct relationship between the primitive used and the primitive referenced in the Verilog code?*  **Yes, they are both showing the same picture except one is using buffers to help reduce of glitches**
 
-*The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?*
+*The Mux implementation leaf cell seems to highlight a vertical path within the CLB. Why?**Because they represent the switches which will be changing while going through the LUTs**
 
 *How is the LUT instantiation different from the normal instantiation of calling a pre-existing module ?* **set the  input in the verilog code**
 
@@ -54,11 +54,11 @@ ___
 
 *Look through chapters 3 and 4 of the Vivado 7 Series Libraries.  Focus on the Design Entry Method box.  Then answer these questions.*
 
-*What does instantiation mean?* **set the input**
+*What does instantiation mean?* **set the initial value. It means to move an existing module into the top module with a specific given name.**
 
-*What does inference mean?*
+*What does inference mean?* **An idea or conclusion drawn from evidence and reasoning.**
 
-*Have we inferred buffers (BUFG) in projects before?* **yes**
+*Have we inferred buffers (BUFG) in projects before?* **yes, it is done when doing mux which vivado creates buffers for to avoid problems.**
 
 *What does instantiation mean?* **double question**
 
@@ -66,7 +66,7 @@ ___
 
 *Verilog has tristate [buffer primitives](http://verilog.renerta.com/mobile/source/vrg00003.htm)  named bufif0 and bufif1. These names don't appear in the Vivado 7 series libraries. Why? What are the risks of using the buffers Xilinx has named in this document?* **The names dont appear  because the gate has the delay. The risk of using the buffers Xilinx is wasting time for the delay and not identical **
 
-*Look up LUT6 in the Vivado 7 series library document. We instantiated it in this project. Is Instantiation possible according to the document?* 
+*Look up LUT6 in the Vivado 7 series library document. We instantiated it in this project. Is Instantiation possible according to the document?*  **Yes, according to document, it can be any hex value but usually in lab used within the range of the given 16 digits.**
 
 *What is the preferred design entry method?* **using the logic table**
 
@@ -76,17 +76,17 @@ ___
 
 *What would you guess is the preferred entry method for a MUXCY .. if it existed in the Vivado 7 series library?* **It doesnt exist in Vivado 7 series library**
 
-*Why do you think Xlinix still supports MUXCY (because we used it!), yet don't document it?* 
+*Why do you think Xlinix still supports MUXCY (because we used it!), yet don't document it?*  **It can be useful to compute 1bit high speed carry functions.**
 
-*Xilinix was the [first FPGA vendor](http://hardwarebee.com/list-fpga-companies/) to start shipping LUT6 FPGAs. Intel FPGAs come from purchasing Xilinx's major competitor for years .. and ships a LUT6. How does [Flex-Logix](http://www.flex-logix.com/6lut-faster-denser/) fit into this competition?*
+*Xilinix was the [first FPGA vendor](http://hardwarebee.com/list-fpga-companies/) to start shipping LUT6 FPGAs. Intel FPGAs come from purchasing Xilinx's major competitor for years .. and ships a LUT6. How does [Flex-Logix](http://www.flex-logix.com/6lut-faster-denser/) fit into this competition?* **A copy of Xilinx trying so hard to be the same as them.**
 
-*Why is this question important to you, the college, the market place?* 
+*Why is this question important to you, the college, the market place?* **Talks about the future of technology in logic designs and circuits**
 
-*What does [Flex-Logix name it's equivalent](http://www.flex-logix.com/dsp-applications/) of LUT6?*  
+*What does [Flex-Logix name it's equivalent](http://www.flex-logix.com/dsp-applications/) of LUT6?*  **Gen 2 EFLX**
 
-*Is the code on this [web site](http://www.flex-logix.com/dsp-applications/) verilog or it's competitor VHDL?* **VHDL**
+*Is the code on this [web site](http://www.flex-logix.com/dsp-applications/) verilog or it's competitor VHDL?* **the code in verilog**
 
-*What class at HCC teaches you what a [FIR](http://www.flex-logix.com/dsp-applications/) is?*  **I dont know. I guess ENES 205**
+*What class at HCC teaches you what a [FIR](http://www.flex-logix.com/dsp-applications/) is?*  **I dont know. I guess ENES 100**
 
 ## 2Decoder
 
@@ -129,7 +129,7 @@ ___
 3. *Does/Do the output(s) flicker in some unknown way based on impurities or differences in the fabric of the FPGA?* **The outputs flicker in differences in the fabric of the FPGA**
 4. *Do we have the tools to figure out what the answer is?* **No**
 
-*Given the concept of an [infinitesimal](https://en.wikipedia.org/wiki/Infinitesimal), is it ever possible for two outputs, from any circuit to change simultaneously?* **I dont know, I guess Yes**
+*Given the concept of an [infinitesimal](https://en.wikipedia.org/wiki/Infinitesimal), is it ever possible for two outputs, from any circuit to change simultaneously?* **No, there is always a Nano second difference between the best possible scenario outputs displayed.**
 
 
 
@@ -184,29 +184,29 @@ That's the reason to make the truth table just have n+1 rows (n is the input)
 
 #### Prompts
 
-*How is the gate verilog code different between AllThree and Gate?*
+*How is the gate verilog code different between AllThree and Gate?* **Gate level coding**
 
-*The first synthesizable System Verilog commands have been introduced. How can you tell by the source verilog file extension?*  
+*The first synthesizable System Verilog commands have been introduced. How can you tell by the source verilog file extension?*  **It has a .sv extension meaning that it is synthesizable. **
 
 ** Where in the verilog "new project sequence of steps" are you given the option of creating system verilog or just plane verilog?* **Creating system verilog**
 
-*In what way does the DataFlow implementation use the if command?*
+*In what way does the DataFlow implementation use the if command?* **It uses if command with the for loop when it is giving conditions to move through the loop for each counter, thus probably a latch.**
 
-*In AllThree, why would always @* work ... in addition to always_combo?*
+*In AllThree, why would always @* work ... in addition to always_combo? **always @ would be for a specific block of code when always_combo works on a different block with a combinations of variables and **
 
-*In System Verilog, what are the other two always commands?*
+*In System Verilog, what are the other two always commands?* **always @(posedge ) or always @(input)**
 
-*From a design point of view, which implementation of a priority encoder do you think Vivado expects engineers to ask it to implement?* 
+*From a design point of view, which implementation of a priority encoder do you think Vivado expects engineers to ask it to implement?*  **ask for data flow RTL verilog code.**
 
-*Which implementation of a priority encoder looks like the easiest to spot and see within a much much larger chunk of verilog code?* 
+*Which implementation of a priority encoder looks like the easiest to spot and see within a much much larger chunk of verilog code?* **It would be the oneHot RTL code.**
 
-*Which is probably the most sustainable (will be supported by vendors in the future, future engineers looking at the code will understand it)?*  
+*Which is probably the most sustainable (will be supported by vendors in the future, future engineers looking at the code will understand it)?*  **It will be the data flow code.**
 
-*Which will be the easiest to change/modify?*
+*Which will be the easiest to change/modify?* **In my opinion it is the oneHot encoder.**
 
-*We have been told that implementation within the FGPA doesn't matter from a net and leaf cell count point of view. We don't see obvious controls that specify where within the chip everything is implemented. (It looks like resources next to the switch and LED pads are being used constantly.) But real quick in the future, speed is going to matter. Which of these priority encoder looks like it will be the fastest?*
+*We have been told that implementation within the FGPA doesn't matter from a net and leaf cell count point of view. We don't see obvious controls that specify where within the chip everything is implemented. (It looks like resources next to the switch and LED pads are being used constantly.) But real quick in the future, speed is going to matter. Which of these priority encoder looks like it will be the fastest?* **The faster one is the oneHot**
 
-*Why is speed not important to us right now?*
+*Why is speed not important to us right now?* **learn how each types of code works**
 
 An alternative to if, if, if, if, if, ... if else is a case command. Both Case and If else Case command syntax was part of verilog.  This is why it is called "data_path". *Why do you think the if if if ...if else command introduced with System Verilog?* 
 
@@ -230,7 +230,7 @@ An alternative to if, if, if, if, if, ... if else is a case command. Both Case a
 
 #### Testing
 
-
+The ROM is dependent upon a behavior manual that tells it what to do. In this case, the four input switches a and b act according to the text sheet included within program following the behavior. Thus changing the text sheet outputs will change the way the LEDs light up which are the gt, lt, and eq which are basically data slots for the ROM output.
 
 ___
 
@@ -246,17 +246,17 @@ Google found [this](https://forums.xilinx.com/t5/Synthesis/Pathnames-for-Verilog
 
 ![1549963883327](1549963883327.png)
 
-*When is the file read by vivado (RTL analysis, synthesis, implementation or bitstream? )*  **bitstream**
+*When is the file read by vivado (RTL analysis, synthesis, implementation or bitstream? )*  **Synthesis is when the file is read by Vivado for the first time. **
 
 *What does this tell you about the file's sustainability (easy to identify, easy to modify, easy to find)?* **easy to identify**
 
-*After following the forum's post, what is the path to where the file actually lives?*
+*After following the forum's post, what is the path to where the file actually lives?* **The path is within the source_1, with .v extension file.**
 
-*After synthesizing, where in a CLB do the contents of the text file go?* 
+*After synthesizing, where in a CLB do the contents of the text file go?* **go into the data path of the circuit mainly inside the LUT.**
 
 Look at the .txt file. 
 
-*How many bits per row?* **3 bits**
+*How many bits per row?* **3 bits per row** 
 
 *How many rows?*  **16 rows**
 
@@ -264,7 +264,7 @@ Look at the .txt file.
 
 *What do the bits in the text file represent?* **000 represent lt gt eq**
 
-*A [Mips CPU](https://en.wikipedia.org/wiki/MIPS_architecture#Jump_and_branch) contains a circuit similar to this. When does the circuit execute?*  
+*A [Mips CPU](https://en.wikipedia.org/wiki/MIPS_architecture#Jump_and_branch) contains a circuit similar to this. When does the circuit execute?*  **execute when the command is given to them to in form of inputs. **
 
 
 
@@ -294,9 +294,4 @@ Your goal is to create a circuit that multiplies two bits together. Use the ROM.
 
 #### Testing
 
- 
-
-___
-
-#### Prompts
-
+ There are four inputs each being two switches of a and b 0-1. By moving these switches, you are moving two hex number switches which will be multiplied and given the result as LEDs in the gt, lt, ca, and eq outputs. It is in binary which can be translated into hex and a truth table was made from the behavior that it is following based on the text sheet in the notebook.
