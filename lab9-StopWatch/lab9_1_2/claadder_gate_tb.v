@@ -6,11 +6,11 @@
 module claadder_gate_tb(
     );
     
-  defparam DUT.C1.AND_DELAY=2, DUT.C1.OR_DELAY=2, DUT.C1.XOR_DELAY=2,
-   DUT.F0.XOR_DELAY=2, DUT.F0.AND_DELAY=2, DUT.F0.XOR_DELAY=2,
-   DUT.F1.XOR_DELAY=2, DUT.F1.AND_DELAY=2, DUT.F1.XOR_DELAY=2,
-   DUT.F2.XOR_DELAY=2, DUT.F2.AND_DELAY=2, DUT.F2.XOR_DELAY=2,
-   DUT.F3.XOR_DELAY=2, DUT.F3.AND_DELAY=2, DUT.F3.XOR_DELAY=2; 
+  defparam DUT.C1.AND_DELAY=1, DUT.C1.OR_DELAY=3, DUT.C1.XOR_DELAY=4,
+   DUT.F0.XOR_DELAY=1, DUT.F0.AND_DELAY=3, DUT.F0.XOR_DELAY=4,
+   DUT.F1.XOR_DELAY=1, DUT.F1.AND_DELAY=3, DUT.F1.XOR_DELAY=4,
+   DUT.F2.XOR_DELAY=1, DUT.F2.AND_DELAY=3, DUT.F2.XOR_DELAY=4,
+   DUT.F3.XOR_DELAY=1, DUT.F3.AND_DELAY=3, DUT.F3.XOR_DELAY=4; 
 
     reg [3:0] a, b;
 	reg cin;
@@ -34,7 +34,6 @@ module claadder_gate_tb(
         {cout, sum} = a_in + b_in + c_in;
     end
   endtask				// task definition ends here
-
     initial
     begin
         a = 4'h4; b=4'ha; cin=1'b0; test_failed = 0;
@@ -68,7 +67,5 @@ module claadder_gate_tb(
 	       $display("Test Failed");
 	    else
 	       $display("Test Passed");
-
-    end
-        
+    end   
 endmodule

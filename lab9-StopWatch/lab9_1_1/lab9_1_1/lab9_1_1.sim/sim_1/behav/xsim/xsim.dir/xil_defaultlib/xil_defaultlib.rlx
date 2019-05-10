@@ -2,8 +2,8 @@
 2018.3
 Dec  7 2018
 00:33:28
-C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/cla_gate.v,1557421548,verilog,,C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate.v,,cla_gate,,,,,,,,
-C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate.v,1557421548,verilog,,C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v,,claadder_gate,,,,,,,,
-C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate_tb.v,1557421548,verilog,,,,claadder_gate_tb,,,,,,,,
-C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v,1557421548,verilog,,C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate_tb.v,,fulladder_with_pg_gate,,,,,,,,
-C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/lab9_1_1/lab9_1_1.sim/sim_1/behav/xsim/glbl.v,1544155482,verilog,,,,glbl,,,,,,,,
+C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/cla_gate.v,1557505370,verilog,,C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate.v,,cla_gate,,,,,,,,
+C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate.v,1557506050,verilog,,C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v,,claadder_gate,,,,,,,,
+C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate_tb.v,1557506140,verilog,,,,claadder_gate_tb,,,,,,,,
+C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v,1557505370,verilog,,C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate_tb.v,,fulladder_with_pg_gate,,,,,,,,
+C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/lab9_1_1/lab9_1_1.sim/sim_1/behav/xsim/glbl.v,1557505370,verilog,,,,glbl,,,,,,,,

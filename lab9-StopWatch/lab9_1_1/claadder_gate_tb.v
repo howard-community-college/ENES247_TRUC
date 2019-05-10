@@ -5,7 +5,6 @@
 
 module claadder_gate_tb(
     );
-    
     reg [3:0] a, b;
 	reg cin;
 	wire [3:0] s;
@@ -23,12 +22,10 @@ module claadder_gate_tb(
     input c_in;
     output [3:0] sum;
     output cout;
-
     begin
         {cout, sum} = a_in + b_in + c_in;
     end
   endtask				// task definition ends here
-
     initial
     begin
         a = 4'h4; b=4'ha; cin=1'b0; test_failed = 0;
@@ -62,7 +59,5 @@ module claadder_gate_tb(
 	       $display("Test Failed");
 	    else
 	       $display("Test Passed");
-
-    end
-        
+    end 
 endmodule

@@ -14,24 +14,24 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11492 
+INFO: Helper process launched with PID 4080 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 375.504 ; gain = 101.039
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 375.785 ; gain = 101.395
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'claadder_gate' [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate.v:6]
-INFO: [Synth 8-6157] synthesizing module 'fulladder_with_pg_gate' [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v:6]
-	Parameter AND_DELAY bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'claadder_gate' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fulladder_with_pg_gate' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v:6]
+	Parameter AND_DELAY bound to: 1 - type: integer 
 	Parameter OR_DELAY bound to: 3 - type: integer 
 	Parameter XOR_DELAY bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'fulladder_with_pg_gate' (1#1) [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v:6]
-INFO: [Synth 8-6157] synthesizing module 'cla_gate' [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/cla_gate.v:6]
-	Parameter AND_DELAY bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fulladder_with_pg_gate' (1#1) [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/fulladder_with_pg_gate.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cla_gate' [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/cla_gate.v:6]
+	Parameter AND_DELAY bound to: 1 - type: integer 
 	Parameter OR_DELAY bound to: 3 - type: integer 
 	Parameter XOR_DELAY bound to: 4 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'cla_gate' (2#1) [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/cla_gate.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'claadder_gate' (3#1) [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cla_gate' (2#1) [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/cla_gate.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'claadder_gate' (3#1) [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/claadder_gate.v:6]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.566 ; gain = 157.102
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 431.113 ; gain = 156.723
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -44,50 +44,50 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.566 ; gain = 157.102
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.113 ; gain = 156.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.566 ; gain = 157.102
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.113 ; gain = 156.723
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc]
-WARNING: [Vivado 12-507] No nets matched 'clk'. [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc:10]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc:10]
+Parsing XDC File [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk'. [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc:10]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/claadder_gate_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/claadder_gate_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/claadder_gate_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.703 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.691 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.703 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.691 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.703 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 753.703 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 753.691 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 753.691 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 753.703 ; gain = 479.238
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 753.691 ; gain = 479.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 753.703 ; gain = 479.238
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 753.691 ; gain = 479.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 753.703 ; gain = 479.238
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 753.691 ; gain = 479.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 753.703 ; gain = 479.238
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 753.691 ; gain = 479.301
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -129,7 +129,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 753.703 ; gain = 479.238
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 753.691 ; gain = 479.301
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -141,13 +141,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 766.445 ; gain = 491.980
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 765.672 ; gain = 491.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 766.445 ; gain = 491.980
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 765.672 ; gain = 491.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -159,7 +159,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 775.977 ; gain = 501.512
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 775.211 ; gain = 500.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -183,7 +183,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 775.977 ; gain = 501.512
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 775.211 ; gain = 500.820
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -196,7 +196,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 775.977 ; gain = 501.512
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 775.211 ; gain = 500.820
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -208,25 +208,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 775.977 ; gain = 501.512
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 775.211 ; gain = 500.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 775.977 ; gain = 501.512
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 775.211 ; gain = 500.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 775.977 ; gain = 501.512
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 775.211 ; gain = 500.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 775.977 ; gain = 501.512
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 775.211 ; gain = 500.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -255,25 +255,25 @@ Report Instance Areas:
 |1     |top      |       |    20|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 775.977 ; gain = 501.512
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 775.211 ; gain = 500.820
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 775.977 ; gain = 179.375
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 775.977 ; gain = 501.512
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 775.211 ; gain = 178.242
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 775.211 ; gain = 500.820
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 786.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 787.313 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 16 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 786.773 ; gain = 524.438
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 786.773 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 787.313 ; gain = 525.555
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 787.313 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/lab9_1_1/lab9_1_1.runs/synth_1/claadder_gate.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/lab9_1_1/lab9_1_1.runs/synth_1/claadder_gate.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file claadder_gate_utilization_synth.rpt -pb claadder_gate_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu May  9 15:53:07 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri May 10 12:36:24 2019...

@@ -5,7 +5,7 @@
 
 parameter COUNT_SIZE=8;
 
-(* use_dsp48 = "no" *)
+(* use_dsp48 = "no" *) //not to use the DSP48
 module updown_ctr_behavior(
     input clk,
     input up_dn,
@@ -14,14 +14,14 @@ module updown_ctr_behavior(
     output reg [COUNT_SIZE-1:0] count
     );
 
-   wire clk_5MHz;
+   wire CLK_5MHz;
    reg clk_1Hz;
    
    clk_5MHz U1
    (
      .clk_in1(clk),      
-     .clk_out1(CLK_5MHz)
-//	 .reset(reset));     
+     .clk_out1(clk_5MHz)
+	// .reset(reset)   
      );
      reg [22:0] count_1sec;
      wire cnt_done_i;
@@ -29,13 +29,13 @@ module updown_ctr_behavior(
 
      assign cnt_done_i = (count_1sec == 23'h4C4B40) ? 1'b1 : 1'b0; 
      
-     always @(posedge CLK_5MHz or posedge reset)
+     always @(posedge clk_5MHz or posedge reset)
      if (reset) 
         cnt_done <= 0;
      else
         cnt_done <= cnt_done_i;
         
-     always @(posedge CLK_5MHz or posedge reset)
+     always @(posedge clk_5MHz or posedge reset)
      if (reset) 
         count_1sec <= 0;
      else if(cnt_done)

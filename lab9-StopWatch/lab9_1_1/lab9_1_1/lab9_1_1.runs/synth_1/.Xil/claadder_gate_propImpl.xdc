@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc rfile:../../../../Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/Nexys4DDR_Master.xdc rfile:../../../../Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets { clk }];
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]

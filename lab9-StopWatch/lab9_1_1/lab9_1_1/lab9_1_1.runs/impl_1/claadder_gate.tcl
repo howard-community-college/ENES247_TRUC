@@ -65,8 +65,9 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
   open_checkpoint claadder_gate_routed.dcp
-  set_property webtalk.parent_dir C:/Users/SET253-21U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/lab9_1_1/lab9_1_1.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_1_1/lab9_1_1/lab9_1_1.cache/wt [current_project]
   catch { write_mem_info -force claadder_gate.mmi }
   write_bitstream -force claadder_gate.bit 
   catch {write_debug_probes -quiet -force claadder_gate}

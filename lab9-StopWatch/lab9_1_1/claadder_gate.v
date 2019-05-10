@@ -15,11 +15,11 @@ module claadder_gate(
 
 	assign cout = cout_i[3];
 
-	fulladder_with_pg_gate #(3,3,4) F0 (.a(a[0]), .b(b[0]), .cin(cin), .p(p[0]), .g(g[0]), .s(s[0]));
-	fulladder_with_pg_gate #(3,3,4) F1 (.a(a[1]), .b(b[1]), .cin(cout_i[0]), .p(p[1]), .g(g[1]), .s(s[1]));
-	fulladder_with_pg_gate #(3,3,4) F2 (.a(a[2]), .b(b[2]), .cin(cout_i[1]), .p(p[2]), .g(g[2]), .s(s[2]));
-	fulladder_with_pg_gate #(3,3,4) F3 (.a(a[3]), .b(b[3]), .cin(cout_i[2]), .p(p[3]), .g(g[3]), .s(s[3]));
+	fulladder_with_pg_gate #(1,3,4) F0 (.a(a[0]), .b(b[0]), .cin(cin), .p(p[0]), .g(g[0]), .s(s[0]));
+	fulladder_with_pg_gate #(1,3,4) F1 (.a(a[1]), .b(b[1]), .cin(cout_i[0]), .p(p[1]), .g(g[1]), .s(s[1]));
+	fulladder_with_pg_gate #(1,3,4) F2 (.a(a[2]), .b(b[2]), .cin(cout_i[1]), .p(p[2]), .g(g[2]), .s(s[2]));
+	fulladder_with_pg_gate #(1,3,4) F3 (.a(a[3]), .b(b[3]), .cin(cout_i[2]), .p(p[3]), .g(g[3]), .s(s[3]));
 
-	cla_gate #(3,3,4) C1 (.p(p), .g(g), .cin(cin), .cout(cout_i));
+	cla_gate #(1,3,4) C1 (.p(p), .g(g), .cin(cin), .cout(cout_i));
 
 endmodule

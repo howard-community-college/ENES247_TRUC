@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu May  9 15:53:42 2019
-| Host         : SET253-21C running 64-bit major release  (build 9200)
+| Date         : Fri May 10 12:37:12 2019
+| Host         : SET253-14C running 64-bit major release  (build 9200)
 | Command      : report_utilization -file claadder_gate_utilization_placed.rpt -pb claadder_gate_utilization_placed.pb
 | Design       : claadder_gate
 | Device       : 7a100tcsg324-1

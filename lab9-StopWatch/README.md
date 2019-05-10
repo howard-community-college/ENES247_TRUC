@@ -1,4 +1,4 @@
-# Lab 9_Stop Watch
+# 0Lab 9_Stop Watch
 
 In this lab, use the Architectural  Wizard and IP Catalog from previous lab 8 to generate various cores including counters (creating timers and real-time clocks)
 
@@ -24,7 +24,7 @@ The major to take away this lab is able to
 
 * Top level module: claadder_gate module
 
-  ![1557431730578](1557431730578.png)
+  ![1557506985814](1557506985814.png)
 
 * bottom level module: 
 
@@ -32,7 +32,7 @@ The major to take away this lab is able to
 
     ![1557432638925](1557432638925.png)
 
-  * cla_gate module
+  * cla_gate module : 
 
     ![1557432663278](1557432663278.png)
 
@@ -56,25 +56,51 @@ The major to take away this lab is able to
 
 #### Testing
 
-timing diagram
+timing diagram 
 
-![1557433825191](1557433825191.png)
+![1557506916073](1557506916073.png)
 
 #### Prompt
 
+written on notebook (page 111)
 
 
-## 9-1-2 
 
-#### Verilog code
+## 9-1-2 using the defparam instead of using the parameter on the lab9-1-1
+
+#### Verilog code 
+
+same as the previous lab
+
+change the testbench from **parameter** 
+
+![1557509604099](1557509604099.png)
+
+![1557509747443](1557509747443.png)
+
+![1557509826328](1557509826328.png)
+
+to **defparam statement**
+
+![1557509900558](1557509900558.png)
+
+![1557509970473](1557509970473.png)
 
 #### RTL Schematic Screen Shot
 
+same as the previous lab
+
 #### Implementation Device screen shot zoomed in on something interesting
+
+same as the previous lab
 
 #### Testing
 
+![1557510832361](1557510832361.png)
+
 #### Prompt
+
+the only different on the testbench code is using the defparam statement in the code. 
 
 
 
@@ -84,6 +110,8 @@ timing diagram
 
 #### Verilog code
 
+
+
 #### RTL Schematic Screen Shot
 
 #### Implementation Device screen shot zoomed in on something interesting
@@ -92,11 +120,11 @@ timing diagram
 
 #### Prompt
 
-Number of BUFG/BUFGCTRL _____2________
-Number of Slice LUTs used: _____25________
-Number of FF used: _____32________
-Number of DSP48E1 slices used: _____0_________
-Number of IOs used: 12__________
+Number of BUFG/BUFGCTRL: 2
+Number of Slice LUTs used: 25
+Number of FF used: 32
+Number of DSP48E1 slices used: 0
+Number of IOs used: 12
 
 
 
