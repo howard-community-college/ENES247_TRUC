@@ -1,4 +1,4 @@
-# 0Lab 9_Stop Watch
+# Lab 9_Stop Watch
 
 In this lab, use the Architectural  Wizard and IP Catalog from previous lab 8 to generate various cores including counters (creating timers and real-time clocks)
 
@@ -318,15 +318,87 @@ Number of IOs used: 12
 
 
 
-## 9-2-4
+## 9-2-4_updown_ctr_core_dsp48
 
 #### Verilog code
 
+* updown_ctr_core_dsp48 verilog code
+
+  ![1557949574067](1557949574067.png)
+
+  ![1557949615029](1557949615029.png)
+
+* Create clk_5MHz by using Architectural Wizard
+
+  ![1557945671725](1557945671725.png)
+
+* create counter_8Bit_dsp48 by using Binary Counter
+
+![1557949477319](1557949477319.png)
+
+![1557949524422](1557949524422.png)
+
 #### RTL Schematic Screen Shot
+
+![1557951304939](1557951304939.png)
+
+![1557951334121](1557951334121.png)
+
+![1557951378674](1557951378674.png)
+
+![1557951440137](1557951440137.png)
+
+![1557951472136](1557951472136.png)
+
+![1557951538779](1557951538779.png)
+
+![1557951569030](1557951569030.png)
+
+![1557951610136](1557951610136.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1557949868851](1557949868851.png)
+
+![1557949906985](1557949906985.png)
+
+![1557949984243](1557949984243.png)
+
+![1557950029418](1557950029418.png)
+
+![1557950297567](1557950297567.png)
+
+![1557950812012](1557950812012.png)
+
+![1557950779027](1557950779027.png)
+
+![1557950744170](1557950744170.png)
+
+![1557950390663](1557950390663.png)
+
+![1557950711148](1557950711148.png)
+
+![1557950609402](1557950609402.png)
+
+![1557950584328](1557950584328.png)
+
+![1557950557041](1557950557041.png)
+
+![1557950437984](1557950437984.png)
+
+![1557950527131](1557950527131.png)
+
+![1557950491761](1557950491761.png)
+
+![1557950105020](1557950105020.png)
+
+![1557949942269](1557949942269.png)
+
 #### Testing
+
+Turn enable on, turn up_dn on ... LED count from right to left (count up)
+
+Turn enable off, turn up_dn on ... LED count from left to right (count down)
 
 #### Prompt
 
