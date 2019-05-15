@@ -106,7 +106,7 @@ the only different on the testbench code is using the defparam statement in the 
 
 ## 9-part 2: Counter and Used Resources
 
-## 9-2-1 _ not use DSP_48slices
+## 9-2-1 _Updown_ctr_not use DSP_48slices
 
 #### Verilog code
 
@@ -170,7 +170,7 @@ Number of IOs used: 12
 
 
 
-## 9-2-2 _ Use DSP_48 slice
+## 9-2-2 _ updown_ctr_Use DSP_48 slice
 
 #### Verilog code
 
@@ -228,15 +228,85 @@ Number of IOs used: 12
 
 
 
-## 9-2-3 
+## 9-2-3 _ updown_ctr_core_fabric
 
 #### Verilog code
 
+* Create the updown_ctr_core_fabric module
+
+  ![1557945602377](1557945602377.png)
+
+![1557945644945](1557945644945.png)
+
+* Create clk_5MHz by using Architectural Wizard
+
+  ![1557945671725](1557945671725.png)
+
+* Create counter_8Bit_fabric by using Binary counter core
+
+  ![1557946851164](1557946851164.png)
+
+  ![1557945490404](1557945490404.png)
+
 #### RTL Schematic Screen Shot
+
+![1557948061630](1557948061630.png)
+
+![1557948087895](1557948087895.png)
+
+![1557948136051](1557948136051.png)
+
+![1557948234775](1557948234775.png)
+
+![1557948309528](1557948309528.png)
+
+![1557948380211](1557948380211.png)
+
+![1557948431055](1557948431055.png)
+
+![1557948478339](1557948478339.png)
+
+![1557948570688](1557948570688.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1557947495640](1557947495640.png)
+
+![1557947456990](1557947456990.png)
+
+![1557947534838](1557947534838.png)
+
+![1557947560271](1557947560271.png)
+
+![1557947590625](1557947590625.png)
+
+![1557947619729](1557947619729.png)
+
+![1557947641009](1557947641009.png)
+
+![1557947759571](1557947759571.png)
+
+![1557947781922](1557947781922.png)
+
+![1557947807668](1557947807668.png)
+
+![1557947850100](1557947850100.png)
+
+![1557947884804](1557947884804.png)
+
+![1557947903885](1557947903885.png)
+
+![1557947927997](1557947927997.png)
+
+![1557947958455](1557947958455.png)
+
+![1557948002629](1557948002629.png)
+
 #### Testing
+
+Turn enable on, turn up_dn on ... LED count from right to left (count up)
+
+Turn enable off, turn up_dn on ... LED count from left to right (count down)
 
 #### Prompt
 

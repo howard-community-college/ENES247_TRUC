@@ -1,0 +1,2 @@
+counter_8Bit_fabric.vhd,vhdl,xil_defaultlib,../../../../lab9_2_3_updown_ctr_core_fabric.srcs/sources_1/ip/counter_8Bit_fabric/sim/counter_8Bit_fabric.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

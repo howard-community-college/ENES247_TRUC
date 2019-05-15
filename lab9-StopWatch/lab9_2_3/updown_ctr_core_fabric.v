@@ -11,12 +11,12 @@ module updown_ctr_core(
     output [7:0] count
     );
 
-    wire clk_5MHz;
+    wire CLK_5MHz;
     
     clk_5MHz U1
     (
       .clk_in1(clk),      
-      .clk_out1(CLK_5MHz)
+      .clk_out1(clk_5MHz)
 //	  .reset(reset)
 	  );     
   
@@ -26,29 +26,27 @@ module updown_ctr_core(
  
       assign cnt_done_i = (count_1sec == 23'h4C4B40) ? 1'b1 : 1'b0; 
       
-      always @(posedge CLK_5MHz or posedge reset)
+      always @(posedge clk_5MHz or posedge reset)
       if (reset) 
          cnt_done <= 0;
       else
          cnt_done <= cnt_done_i;
          
-      always @(posedge CLK_5MHz or posedge reset)
+      always @(posedge clk_5MHz or posedge reset)
       if (reset) 
          count_1sec <= 0;
       else if(cnt_done)
           count_1sec <= 0;
       else
           count_1sec <= count_1sec + 1;
- 
     
  // instantiate up-down core
      counter_8Bit_fabric U2 (
-       .CLK(CLK_5MHz), // input clk
+       .CLK(clk_5MHz), // input clk
        .CE(cnt_done & enable), // input ce
        .SCLR(reset), // input sclr
-       .UP(up_dn), // input up
+       //.UP(up_dn), // input up
        .Q(count) // output [7 : 0] q
      );
-
-    
+  
 endmodule
