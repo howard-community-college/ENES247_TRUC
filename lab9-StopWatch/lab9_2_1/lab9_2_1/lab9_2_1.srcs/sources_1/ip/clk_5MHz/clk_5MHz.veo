@@ -73,7 +73,7 @@
     // Clock out ports
     .clk_out1(clk_out1),     // output clk_out1
     // Status and control signals
-    .power_down(power_down),   // input power_down
+    .reset(reset), // input reset
     .locked(locked),       // output locked
    // Clock in ports
     .clk_in1(clk_in1));      // input clk_in1

@@ -11,9 +11,8 @@ module updown_ctr_behavior(
     input up_dn,
     input reset,
     input enable,
-    output reg [COUNT_SIZE-1:0] count
-    );
-
+    output reg [COUNT_SIZE-1:0] count);
+   
    wire CLK_5MHz;
    reg clk_1Hz;
    
@@ -43,7 +42,7 @@ module updown_ctr_behavior(
      else
          count_1sec <= count_1sec + 1;
    
-    always @(posedge CLK_5MHz or posedge reset)
+    always @(posedge clk_5MHz or posedge reset)
         if (reset)
            count <= 0;
         else if (enable & cnt_done)

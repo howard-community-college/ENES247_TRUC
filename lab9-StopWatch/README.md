@@ -106,17 +106,59 @@ the only different on the testbench code is using the defparam statement in the 
 
 ## 9-part 2: Counter and Used Resources
 
-## 9-2-1 
+## 9-2-1 _ not use DSP_48slices
 
 #### Verilog code
 
+![1557886403164](1557886403164.png)
 
+![1557886441976](1557886441976.png)
+
+Create Architectural Wizard clk_5MHz
+
+![1557886575392](1557886575392.png) 
 
 #### RTL Schematic Screen Shot
 
+![1557886782579](1557886782579.png)
+
+![1557886816418](1557886816418.png)
+
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1557885222892](1557885222892.png)
+
+![1557885555617](1557885555617.png)
+
+![1557885601865](1557885601865.png)
+
+![1557885695544](1557885695544.png)
+
+![1557885742678](1557885742678.png)
+
+![1557885787182](1557885787182.png)
+
+![1557885857781](1557885857781.png)
+
+![1557885924273](1557885924273.png)
+
+![1557885965502](1557885965502.png)
+
+![1557885995990](1557885995990.png)
+
+![1557886049702](1557886049702.png)
+
+![1557886155119](1557886155119.png)
+
+![1557886281203](1557886281203.png)
+
+![1557886304859](1557886304859.png)
+
 #### Testing
+
+When up_dn off,  enable on, LED count from the left to right (count down)
+
+When up_dn on, enable on, LED count from right to left (count up)
 
 #### Prompt
 
@@ -128,23 +170,61 @@ Number of IOs used: 12
 
 
 
-## 9-2-2
+## 9-2-2 _ Use DSP_48 slice
 
 #### Verilog code
 
+![1557888364350](1557888364350.png)
+
+![1557888390712](1557888390712.png)
+
+Create Architectural Wizard clk_5MHz
+
+![1557886575392](1557886575392.png)
+
 #### RTL Schematic Screen Shot
+
+![1557889758974](1557889758974.png)
+
+![1557889797746](1557889797746.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1557888525886](1557888525886.png)
+
+![1557888584476](1557888584476.png)
+
+![1557888612034](1557888612034.png)
+
+![1557888736192](1557888736192.png)
+
+![1557888808134](1557888808134.png)
+
+![1557888841949](1557888841949.png)
+
+![1557888924335](1557888924335.png)
+
+![1557888958123](1557888958123.png)
+
+![1557888994564](1557888994564.png)
+
+![1557889031004](1557889031004.png)
+
+![1557889071840](1557889071840.png)
+
 #### Testing
+
+Turn enable on, turn up_dn on ... LED count from right to left (count up)
+
+Turn enable off, turn up_dn on ... LED count from left to right (count down)
 
 #### Prompt
 
-Number of BUFG/BUFGCTRL ______2________
-Number of Slice LUTs used: ______22_______
-Number of FF used: ______33_______
-Number of DSP48E1 slices used: ______2________
-Number of IOs used: ______12_______
+Number of BUFG/BUFGCTRL : 2
+Number of Slice LUTs used:  22
+Number of FF used:  33
+Number of DSP48E1 slices used: 2
+Number of IOs used: 12
 
 
 
@@ -160,11 +240,11 @@ Number of IOs used: ______12_______
 
 #### Prompt
 
-Number of BUFG/BUFGCTRL _______2_______
-Number of Slice LUTs used: ______27_______
-Number of registers used: ______32_______
-Number of DSP48E1 slices used: _______0_______
-Number of IOs used: ______12_______
+Number of BUFG/BUFGCTRL: 2
+Number of Slice LUTs used: 27
+Number of registers used:  32
+Number of DSP48E1 slices used: 0
+Number of IOs used: 12
 
 
 
@@ -180,11 +260,11 @@ Number of IOs used: ______12_______
 
 #### Prompt
 
-Number of BUFG/BUFGCTRL ______2________
-Number of Slice LUTs used: ______18________
-Number of registers used: ______24_______
-Number of DSP48E1 slices used: ______1________
-Number of IOs used: ______12_________
+Number of BUFG/BUFGCTRL : 2
+Number of Slice LUTs used:  18
+Number of registers used: 24
+Number of DSP48E1 slices used: 1
+Number of IOs used: 12
 
 
 

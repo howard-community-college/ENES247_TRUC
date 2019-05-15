@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Fri May 10 14:39:08 2019
--- Host        : SET253-14C running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.srcs/sources_1/ip/clk_5MHz/clk_5MHz_sim_netlist.vhdl
+-- Date        : Tue May 14 21:08:34 2019
+-- Host        : GAUBIN running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode funcsim {c:/Users/Gau
+--               Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.srcs/sources_1/ip/clk_5MHz/clk_5MHz_sim_netlist.vhdl}
 -- Design      : clk_5MHz
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -17,7 +17,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity clk_5MHz_clk_5MHz_clk_wiz is
   port (
     clk_out1 : out STD_LOGIC;
-    power_down : in STD_LOGIC;
+    reset : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
@@ -159,8 +159,8 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       PSDONE => NLW_mmcm_adv_inst_PSDONE_UNCONNECTED,
       PSEN => '0',
       PSINCDEC => '0',
-      PWRDWN => power_down,
-      RST => '0'
+      PWRDWN => '0',
+      RST => reset
     );
 end STRUCTURE;
 library IEEE;
@@ -170,7 +170,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity clk_5MHz is
   port (
     clk_out1 : out STD_LOGIC;
-    power_down : in STD_LOGIC;
+    reset : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
@@ -185,6 +185,6 @@ inst: entity work.clk_5MHz_clk_5MHz_clk_wiz
       clk_in1 => clk_in1,
       clk_out1 => clk_out1,
       locked => locked,
-      power_down => power_down
+      reset => reset
     );
 end STRUCTURE;

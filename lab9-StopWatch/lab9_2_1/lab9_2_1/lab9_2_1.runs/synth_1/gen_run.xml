@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557513378">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1557886676">
   <File Type="PA-TCL" Name="updown_ctr_behavior.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="updown_ctr_behavior_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="updown_ctr_behavior_reports.tcl"/>

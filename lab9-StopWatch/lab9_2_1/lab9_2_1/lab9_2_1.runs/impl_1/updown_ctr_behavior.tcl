@@ -67,17 +67,16 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
-  set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.xpr [current_project]
-  set_property ip_output_repo C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.runs/synth_1/updown_ctr_behavior.dcp
-  read_ip -quiet c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.srcs/sources_1/ip/clk_5MHz/clk_5MHz.xci
-  read_xdc C:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/Nexys4DDR_Master.xdc
+  add_files -quiet {{C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.runs/synth_1/updown_ctr_behavior.dcp}}
+  read_ip -quiet {{c:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.srcs/sources_1/ip/clk_5MHz/clk_5MHz.xci}}
+  read_xdc {{C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/Nexys4DDR_Master.xdc}}
   link_design -top updown_ctr_behavior -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

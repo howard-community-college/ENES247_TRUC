@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-// Date        : Fri May 10 14:39:08 2019
-// Host        : SET253-14C running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/SET253-14U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.srcs/sources_1/ip/clk_5MHz/clk_5MHz_sim_netlist.v
+// Date        : Tue May 14 21:08:34 2019
+// Host        : GAUBIN running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode funcsim {c:/Users/Gau
+//               Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_2_1/lab9_2_1/lab9_2_1.srcs/sources_1/ip/clk_5MHz/clk_5MHz_sim_netlist.v}
 // Design      : clk_5MHz
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,34 +15,34 @@
 (* NotValidForBitStream *)
 module clk_5MHz
    (clk_out1,
-    power_down,
+    reset,
     locked,
     clk_in1);
   output clk_out1;
-  input power_down;
+  input reset;
   output locked;
   input clk_in1;
 
   (* IBUF_LOW_PWR *) wire clk_in1;
   wire clk_out1;
   wire locked;
-  wire power_down;
+  wire reset;
 
   clk_5MHz_clk_5MHz_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
         .locked(locked),
-        .power_down(power_down));
+        .reset(reset));
 endmodule
 
 (* ORIG_REF_NAME = "clk_5MHz_clk_wiz" *) 
 module clk_5MHz_clk_5MHz_clk_wiz
    (clk_out1,
-    power_down,
+    reset,
     locked,
     clk_in1);
   output clk_out1;
-  input power_down;
+  input reset;
   output locked;
   input clk_in1;
 
@@ -53,7 +53,7 @@ module clk_5MHz_clk_5MHz_clk_wiz
   wire clkfbout_buf_clk_5MHz;
   wire clkfbout_clk_5MHz;
   wire locked;
-  wire power_down;
+  wire reset;
   wire NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED;
@@ -170,8 +170,8 @@ module clk_5MHz_clk_5MHz_clk_wiz
         .PSDONE(NLW_mmcm_adv_inst_PSDONE_UNCONNECTED),
         .PSEN(1'b0),
         .PSINCDEC(1'b0),
-        .PWRDWN(power_down),
-        .RST(1'b0));
+        .PWRDWN(1'b0),
+        .RST(reset));
 endmodule
 `ifndef GLBL
 `define GLBL
