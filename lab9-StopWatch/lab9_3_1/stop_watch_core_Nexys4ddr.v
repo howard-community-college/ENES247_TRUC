@@ -25,7 +25,7 @@ module stop_watch_core(
    clk_5MHz U1
    (
      .clk_in1(clk),      
-     .clk_out1(CLK_5MHz));     
+     .clk_out1(clk_5MHz));     
  
      reg [18:0] count_1tenthsec;
      wire cnt_done_i;
@@ -33,13 +33,13 @@ module stop_watch_core(
 
      assign cnt_done_i = (count_1tenthsec == 19'h7A120) ? 1'b1 : 1'b0; 
      
-     always @(posedge CLK_5MHz or posedge reset)
+     always @(posedge clk_5MHz or posedge reset)
      if (reset) 
         cnt_done <= 0;
      else
         cnt_done <= cnt_done_i;
         
-     always @(posedge CLK_5MHz or posedge reset)
+     always @(posedge clk_5MHz or posedge reset)
      if (reset) 
         count_1tenthsec <= 0;
      else if(cnt_done)
@@ -56,11 +56,11 @@ module stop_watch_core(
         default : seg = {8'hff}; // turn OFF
     endcase
     
-    clk_divider_about_500hz_refresh_rate_4display R1 (.Clk(CLK_5MHz), .reset(reset), .an(an[3:0]));
+    clk_divider_about_500hz_refresh_rate_4display R1 (.Clk(clk_5MHz), .reset(reset), .an(an[3:0]));
       
 // instantiate up count core
     counter_6Bit_dsp48 U2 (
-      .CLK(CLK_5MHz), 
+      .CLK(clk_5MHz), 
       .CE(cnt_done & enable), 
       .SCLR(tenth_count_clear), 
       .Q(tenth_count) 
@@ -77,7 +77,7 @@ module stop_watch_core(
     binary6Bit_to_2digitBCD Sec(.addr(second_count),.data({s_cnt_m,s_cnt_l}));
     
     counter_6Bit_dsp48 U3 (
-      .CLK(CLK_5MHz),  
+      .CLK(clk_5MHz),  
       .CE(tenth_count_done & enable), 
       .SCLR(second_count_clear), 
       .Q(second_count) 
@@ -87,7 +87,7 @@ module stop_watch_core(
     assign second_count_clear = reset | second_count_done;
 
     counter_6Bit_dsp48 U4 (
-      .CLK(CLK_5MHz), 
+      .CLK(clk_5MHz), 
       .CE(second_count_done & enable), 
       .SCLR(minute_count_clear), 
       .Q(minute_count) 

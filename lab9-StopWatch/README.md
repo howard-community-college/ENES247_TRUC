@@ -416,11 +416,69 @@ Number of IOs used: 12
 
 #### Verilog code
 
+* Top_level: stop_watch_core module
+
+  ![1558023545225](1558023545225.png)
+
+![1558023678635](1558023678635.png)
+
+![1558023705322](1558023705322.png)
+
+* Bottom_level: 
+
+  * clk_divider_about_500hz_refesh_rate_4display
+
+    ![1558023866794](1558023866794.png)
+
+  *  binary6Bit_to_2digitBCD module (ROM)
+
+    ![1558023961706](1558023961706.png)
+
+    ![1558024029390](1558024029390.png)
+
+    ![1558024052399](1558024052399.png)
+
+  * bcdto7Segment_dataflow module
+
+    ![1558023784187](1558023784187.png)
+
+  * Create clocking Wizard clk_5MHz
+
+  ![1558022303452](1558022303452.png)
+
+  ![1558022329332](1558022329332.png)
+
+  * Create counter_6Bit_dsp48
+
+  ![1558022454159](1558022454159.png)
+
+![1558022501251](1558022501251.png)
+
 #### RTL Schematic Screen Shot
+
+![1558024131466](1558024131466.png)
+
+![1558024161658](1558024161658.png)
+
+![1558024200483](1558024200483.png)
+
+![1558024261803](1558024261803.png)
+
+![1558024353211](1558024353211.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1558023425506](1558023425506.png)
+
+![1558023317570](1558023317570.png)
+
+![1558023459527](1558023459527.png)
+
+![1558023484912](1558023484912.png)
+
 #### Testing
+
+When enable on, it count the first digit on 7segment (tenth) from 1 to 10 and turn the second and third digit on 7segment(SecM SecL) count until 19 and restart
 
 #### Prompt
 

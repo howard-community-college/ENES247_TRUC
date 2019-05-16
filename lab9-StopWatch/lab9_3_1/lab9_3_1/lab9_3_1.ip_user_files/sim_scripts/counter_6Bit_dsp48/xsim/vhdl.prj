@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../lab9_3_1.srcs/sources_1/ip/counter_6Bit_dsp48/sim/counter_6Bit_dsp48.vhd" \
+
+nosort
