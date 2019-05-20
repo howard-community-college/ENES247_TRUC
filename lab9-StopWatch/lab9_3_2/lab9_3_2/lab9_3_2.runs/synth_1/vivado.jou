@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 20 01:49:35 2019
+# Process ID: 10236
+# Current directory: C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_3_2/lab9_3_2/lab9_3_2.runs/synth_1
+# Command line: vivado.exe -log count_down_timer_core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source count_down_timer_core.tcl
+# Log file: C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_3_2/lab9_3_2/lab9_3_2.runs/synth_1/count_down_timer_core.vds
+# Journal file: C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_3_2/lab9_3_2/lab9_3_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source count_down_timer_core.tcl -notrace

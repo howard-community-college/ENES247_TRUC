@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_5MHz_synth_1" LaunchDir="C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab9-StopWatch/lab9_3_3/lab9_3_3/lab9_3_3.runs/clk_5MHz_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

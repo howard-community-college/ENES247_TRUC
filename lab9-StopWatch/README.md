@@ -488,13 +488,99 @@ When enable on, it count the first digit on 7segment (tenth) from 1 to 10 and tu
 
 #### Verilog code
 
+* Top level: Count_down_timer_core module
+
+  ![1558357516524](1558357516524.png)
+
+  ![1558357547119](1558357547119.png)
+
+  ![1558357587686](1558357587686.png)
+
+  ![1558357630543](1558357630543.png)
+
+  ![1558357658132](1558357658132.png)
+
+* bottom level: 
+
+  * clk_5MHz 
+
+    ![1558358034394](1558358034394.png)
+
+  * clk_divider_about_500hz_refesh_rate_4display
+
+    ![1558358080567](1558358080567.png)
+
+  *  bcdto7segment_dataflow
+
+    ![1558358107007](1558358107007.png)
+
+  *  binary6Bit_to_2digitBCD (ROM)
+
+    ![1558358159412](1558358159412.png)
+
+    ![1558358197445](1558358197445.png)
+
+    ![1558358233112](1558358233112.png)
+
+  * down_counter_asynLoad_syncCE (delay)
+
+    ![1558358600283](1558358600283.png)
+
+  * db_debouncer module
+
+    ![1558358687757](1558358687757.png)
+
+![1558358783441](1558358783441.png)
+
 #### RTL Schematic Screen Shot
+
+![1558332313680](1558332313680.png)
+
+![1558332355175](1558332355175.png)
+
+![1558332424338](1558332424338.png)
+
+![1558332524232](1558332524232.png)
+
+![1558332628499](1558332628499.png)
+
+![1558332810656](1558332810656.png)
+
+![1558332865144](1558332865144.png)
+
+
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1558331695431](1558331695431.png)
+
+![1558331625455](1558331625455.png)
+
+![1558331779482](1558331779482.png)
+
+![1558331842493](1558331842493.png)
+
+![1558331878671](1558331878671.png)
+
+![1558331918563](1558331918563.png)
+
+![1558331953793](1558331953793.png)
+
+![1558331984165](1558331984165.png)
+
+![1558332063907](1558332063907.png)
+
+![1558331728422](1558331728422.png)
+
 #### Testing
 
+Turn [1:0] minute (R13 U18) on, then load (M18) on, and the output on 7 segment is 03:00
+
+When enable on, the number on 7segment starts to count down from 03:00 until 00:00
+
 #### Prompt
+
+Written on notebook
 
 
 
@@ -502,10 +588,58 @@ When enable on, it count the first digit on 7segment (tenth) from 1 to 10 and tu
 
 #### Verilog code
 
+* Top level: real_time_clock_core
+
+  ![1558360234334](1558360234334.png)
+
+![1558360268564](1558360268564.png)
+
+![1558360295039](1558360295039.png)
+
+* Bottom level: 
+
+  * clk_5MHz
+
+    ![1558360007741](1558360007741.png)
+
+  * clk_divider_about_500hz_refesh_rate_4display
+
+    ![1558360338975](1558360338975.png)
+
+  * counter_6Bit_dsp48
+
+    ![1558360146599](1558360146599.png)
+
+    ![1558360177030](1558360177030.png)
+
+  * binary6Bit_to_2digitBCD
+
+    ![1558360362257](1558360362257.png)
+
+    ![1558360454369](1558360454369.png)
+
+  * bcdto7segment_dataflow
+
+![1558360483130](1558360483130.png)
+
 #### RTL Schematic Screen Shot
+
+![1558360584401](1558360584401.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1558360532942](1558360532942.png)
+
+![1558360703053](1558360703053.png)
+
+![1558360750045](1558360750045.png)
+
 #### Testing
 
+It's automatic countdown. until press the reset button. It restarts counting down.
+
 #### Prompt
+
+Create clk_5MHz by using architectural wizard
+
+Create counter_6Bit_dsp48 by using Binary counter
