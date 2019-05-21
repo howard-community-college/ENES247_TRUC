@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab11-ASM/lab11_1_1/mult_3x3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_3x3
+INFO: [VRFC 10-2458] undeclared symbol count_done, assumed default net type wire [C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab11-ASM/lab11_1_1/mult_3x3.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab11-ASM/lab11_1_1/mult_3x3_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_3x3_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab11-ASM/lab11_1_1/lab11_1_1/lab11_1_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
