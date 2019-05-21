@@ -68,12 +68,12 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.cache/ip}} [current_project]
+  set_property webtalk.parent_dir C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.cache/wt [current_project]
+  set_property parent.project_path C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.xpr [current_project]
+  set_property ip_output_repo C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/synth_1/moore_sequence_detector_3processes.dcp}}
-  read_xdc {{C:/Users/Gau Bin/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/Nexys4DDR_Master.xdc}}
+  add_files -quiet C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/synth_1/moore_sequence_detector_3processes.dcp
+  read_xdc C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_2_1/Nexys4DDR_Master.xdc
   link_design -top moore_sequence_detector_3processes -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

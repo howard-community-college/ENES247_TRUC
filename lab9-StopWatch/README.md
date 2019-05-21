@@ -643,3 +643,4 @@ It's automatic countdown. until press the reset button. It restarts counting dow
 Create clk_5MHz by using architectural wizard
 
 Create counter_6Bit_dsp48 by using Binary counter
+

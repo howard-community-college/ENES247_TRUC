@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_3_1/Nexys4DDR_Master.xdc rfile:../../../../Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_3_1/Nexys4DDR_Master.xdc rfile:../../../../Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:29 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN V10   IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L21P_T3_DQS_14 Sch=sw[15]
 set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]

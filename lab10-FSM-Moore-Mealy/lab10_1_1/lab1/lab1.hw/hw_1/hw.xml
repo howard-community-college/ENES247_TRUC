@@ -9,7 +9,7 @@
     <Object name="xc7a100t_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="C:/Users/SET253-17U.HCCMAIN/Documents/GitHub/ENES247/lab10-FSM-Moore-Mealy/lab10_2_1/lab2/lab2.runs/impl_1/moore_sequence_detector_3processes.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/mealy_sequence_detector_3processes.bit"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
   </ObjectList>

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_1_1/mealy_sequence_detector_3processes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy_sequence_detector_3processes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_1_1/mealy_sequence_detector_3processes_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy_sequence_detector_3processes_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_1_1/lab1/lab1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
