@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_3_1/count_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_3_1/mealy_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_3_1/mealy_ROM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mealy_ROM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET165-07U/Documents/GitHub/ENES247_TRUC/lab10-FSM-Moore-Mealy/lab10_3_1/lab3/lab3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

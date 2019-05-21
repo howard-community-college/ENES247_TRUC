@@ -18,3 +18,6 @@ wait_on_run impl_1
 open_run impl_1
 launch_simulation
 source moore_sequence_detector_3processes_tb.tcl
+close_sim
+close_design
+synth_design -rtl -name rtl_1

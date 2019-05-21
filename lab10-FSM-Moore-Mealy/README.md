@@ -48,11 +48,15 @@ The state register is modeled as D flip-flops
 
 #### Verilog code
 
+![1558449155009](1558449155009.png)
 
+![1558449189866](1558449189866.png)
+
+![1558449215345](1558449215345.png)
 
 #### RTL Schematic Screen Shot
 
-
+![1558449470926](1558449470926.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
@@ -70,7 +74,7 @@ timing diagram
 
 The output of moore sequential is generated from the state register (D-flipflops) block.
 
-The next state is determined using the current input and current state
+The next state is determined using the current input and current state.
 
 
 
@@ -80,19 +84,28 @@ The next state is determined using the current input and current state
 
 #### Verilog code
 
+* module count_ROM is inside the top level module mealy_ROM
 
+![1558449672493](1558449672493.png)
+
+![1558449688888](1558449688888.png)
 
 #### RTL Schematic Screen Shot
 
-
+![1558449637662](1558449637662.png)
 
 #### Implementation Device screen shot zoomed in on something interesting
 
+![1558449610993](1558449610993.png)
 
+![1558449753473](1558449753473.png)
 
 #### Testing
 
+timing diagram
 
+![1558449861085](1558449861085.png)
 
 #### Prompt
 
+The counting sequence will be: 000, 001, 011, 101, 111, 010 (repeat) 000, …

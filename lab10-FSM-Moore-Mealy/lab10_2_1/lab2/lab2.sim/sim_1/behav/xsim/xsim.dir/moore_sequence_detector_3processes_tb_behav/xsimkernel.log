@@ -2,3 +2,6 @@ Running: xsim.dir/moore_sequence_detector_3processes_tb_behav/xsimk.exe -simmode
 Design successfully loaded
 Design Loading Memory Usage: 6008 KB (Peak: 6008 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6628 KB (Peak: 6628 KB)
+Simulation CPU Usage: 30 ms
