@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab11-ASM/asm_chart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module asm_chart
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab11-ASM/asm_chart_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module asm_chart_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/SET253-10U.HCCMAIN/Documents/GitHub/ENES247_TRUC/lab11-ASM/lab_Asm_chart/lab_Asm_chart.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
