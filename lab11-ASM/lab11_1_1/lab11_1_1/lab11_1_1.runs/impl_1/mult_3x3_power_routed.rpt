@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue May 21 13:13:34 2019
+| Date             : Wed May 22 14:34:45 2019
 | Host             : SET253-10C running 64-bit major release  (build 9200)
 | Command          : report_power -file mult_3x3_power_routed.rpt -pb mult_3x3_power_summary_routed.pb -rpx mult_3x3_power_routed.rpx
 | Design           : mult_3x3
@@ -52,8 +52,8 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.033 |       34 |       --- |             --- |
-|   LUT as Logic |     0.026 |       13 |     63400 |            0.02 |
+| Slice Logic    |     0.032 |       34 |       --- |             --- |
+|   LUT as Logic |     0.025 |       13 |     63400 |            0.02 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   Register     |     0.001 |       15 |    126800 |            0.01 |
 |   Others       |     0.000 |        2 |       --- |             --- |

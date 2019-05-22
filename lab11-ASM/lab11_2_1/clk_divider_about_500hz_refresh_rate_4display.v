@@ -11,8 +11,7 @@ module clk_divider_about_500hz_refresh_rate_4display(
     input reset,
     output reg [3:0] an
     );
-    
-    reg [14:0] count;
+        reg [14:0] count;
 
     always @(posedge Clk or posedge reset)
     if (reset) 
@@ -34,5 +33,4 @@ module clk_divider_about_500hz_refresh_rate_4display(
                   end
        endcase 
      end
-
 endmodule
